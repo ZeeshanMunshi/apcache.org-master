@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.apache.org/dev/release-signing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of The Apache Software Foundation">
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="http://www.apache.org/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://www.apache.org/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.apache.org/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://www.apache.org/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.apache.org/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://www.apache.org/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://www.apache.org/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://www.apache.org/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://www.apache.org/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://www.apache.org/favicons/manifest.json">
+  <link rel="shortcut icon" href="http://www.apache.org/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="http://www.apache.org/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="http://www.apache.org/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Signing Releases</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+  <link href="http://www.apache.org/css/min.bootstrap.css" rel="stylesheet">
+  <link href="http://www.apache.org/css/styles.css" rel="stylesheet">
+  
+
+  <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at . http://www.apache.org/licenses/LICENSE-2.0 . Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. -->
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav-collapse">
+          <ul class="nav navbar-nav navbar-justified">
+            <li>
+              <form class="visible-xs">
+                <div class="input-group" style="width: 100%;">
+                  <script>
+                    (function() {
+                    var cx = '005703438322411770421:5mgshgrgx2u';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:searchbox-only></gcse:searchbox-only>
+                </div>
+              </form>
+            </li>
+            <li><a href="http://www.apache.org/index.html#news">News</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/foundation">Overview</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">Process</a></li>
+                <li><a href="http://www.apache.org/foundation/governance/">Governance</a></li>
+                <li><a href="http://www.apache.org/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="http://www.apache.org/foundation/governance/members.html">Membership</a></li>
+                <li><a href="https://community.apache.org/">Community</a></li>
+                <li><a href="http://www.apache.org/foundation/glossary.html">Glossary</a></li>
+                <li><a href="http://www.apache.org/foundation/preFAQ.html">FAQ</a></li>
+                <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html">Support Apache</a></li>
+                <li><a href="http://www.apache.org/press/">Media/Analysts</a></li>
+                <li><a href="http://www.apache.org/foundation/contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Make a Donation&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/foundation/contributing.html">Donate Now</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via Credit Card</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via ACH</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via PayPal</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html#Bitcoin">&nbsp;&nbsp;Using Bigcoin</a></li>
+                <li><a href="https://www.redbubble.com/people/comdev">Buy Swag</a></li>
+                <li><a href="https://smile.amazon.com/gp/chpf/homepage/ref=smi_se_scyc_srch_stsr?q=apache+software+foundation&amp;orig=%2F">Shop smile.amazon.com</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">ASF Sponsorship</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks#targeted-sponsors">Targeted Sponsorship</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">The Apache Way&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="https://s.apache.org/GhnI">Sustainable Open Source</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">How it Works</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html#meritocracy">Merit</a></li>
+                <li><a href="https://blogs.apache.org/foundation/category/SuccessAtApache">Success at Apache</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">Join Us&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://community.apache.org/gettingStarted/101.html">Getting Started</a></li>
+                <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                <li><a href="https://www.apachecon.com/">ApacheCon</a></li>
+                <li><a href="http://community.apache.org/calendars/">Community Events</a></li>
+                <li><a href="http://www.apache.org/travel/">Travel Assistance</a></li>
+                <li><a href="https://community.apache.org/gsoc.html">Summer of Code</a></li>
+                <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="https://community.apache.org/contributors/etiquette">Etiquette</a></li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/index.html#projects-list">Project List</a></li>
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html#management">How they work</a></li>
+                    <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+                    <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+                    <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+                    <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="http://www.apache.org/foundation/marks/">Brand Management</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">People&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html#roles">Roles</a></li>
+                    <li><a href="http://www.apache.org/foundation/members.html">Members</a></li>
+                    <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+                    <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Board of Directors</a></li>
+                    <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Officers  &amp; Project VPs</a></li>
+                    <li><a href="https://community.zones.apache.org/map.html">Location Map</a></li>
+                    <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://people.apache.org/">Committer Directory</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://community.apache.org/about/">Community Development</a></li>
+                    <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://community.apache.org/">Get Involved</a></li>
+                    <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+                    <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+                    <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">License&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+                    <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+                    <li><a href="http://www.apache.org/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+                    <li><a href="http://www.apache.org/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+                    <li><a href="http://www.apache.org/foundation/marks/list/">Trademarks</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sponsors&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor the ASF</a></li>
+                    <li><a href="http://www.apache.org/foundation/thanks">Sponsor Thanks</a></li>
+                    <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+                    <li><a href="http://www.apache.org/foundation/contributing.html">Individual Donations</a></li>
+                    <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/dist/">Distribution</a></li>
+                <li><a href="https://projects.apache.org/releases.html">Releases</a></li>
+                <li><a href="http://www.apache.org/dyn/closer.cgi">Mirrors</a></li>
+                <li><a href="https://status.apache.org/">Infrastructure Status</a></li>
+                <li><a href="http://www.apache.org/uptime/">Infrastructure Statistics</a></li>
+              </ul>
+            </li>
+            <li class="dropdown hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"
+                  aria-hidden="true"></span><span class="sr-only">Search</span></a>
+              <ul class="dropdown-menu search-form" role="search">
+                <li>
+                  <div class="input-group" style="width: 100%; padding: 0 5px;">
+                    <script>
+                      (function() {
+                      var cx = '005703438322411770421:5mgshgrgx2u';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                      '//cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:searchbox-only></gcse:searchbox-only>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- / Navigation -->
+  <header id="main-header" class="container">
+    <div class="sideImg">
+      <a class="visible-home" href="http://apachecon.com/"><img class="img-responsive" src="http://www.apache.org/img/ApacheCon-PROMO-2019.gif" alt="ApacheCon is Coming 9-12 Sept. 2019 - Las Vegas"></a>
+      <a class="hidden-home" href="http://www.apache.org/"><img class="img-responsive" src="http://www.apache.org/img/ASF20thAnniversary.jpg" alt="The Apache Software Foundation"></a>
+    </div>
+    <div class="main">
+      <img class="img-responsive center-block visible-home" src="http://www.apache.org/img/ASF20thAnniversary.jpg" alt="Apache 20th Anniversary Logo">
+      <h2 class="text-center">Celebrating 20 years of community-led development "The&nbsp;Apache&nbsp;Way"</h2>
+      <ul class="nav navbar-nav navbar-justified">
+        <li class="drowpdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/index.html#projects-list">Project List</a></li>
+            <li><a href="#">How they work</a></li>
+            <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+            <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+            <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+            <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+            <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+            <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+            <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Brand Management</a></li>
+            <li><a href="http://www.apache.org/foundation/glossary.html">Glossary of Terms</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">People&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/foundation/how-it-works.html#roles">Roles</a></li>
+            <li><a href="http://www.apache.org/foundation/members.html">Members</a></li>
+            <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+            <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Board of Directors</a></li>
+            <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Officers &amp; Product VPs</a></li>
+            <li><a href="https://community.zones.apache.org/map.html">Heat Map</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://people.apache.org/">Committer Directory</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://community.apache.org/about/">Community Development</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://community.apache.org/">Get Involved</a></li>
+            <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+            <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+            <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">License&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+            <li><a href="http://www.apache.org/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/list/">Trademarks</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sponsors&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor the ASF</a></li>
+            <li><a href="http://www.apache.org/foundation/thanks">Sponsor Thanks</a></li>
+            <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+            <li><a href="http://www.apache.org/foundation/contributing.html">Individual Donations</a></li>
+            <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sideImg">
+      <a href="http://www.apache.org/foundation/contributing.html"><img class="img-responsive" src="http://www.apache.org/img/support-apache.jpg" alt="Apache Support Logo" /></a>
+    </div>
+  </header>
+  <div class="container"><style type="text/css">
+/* The following code is added by mdx_elementid.py
+   It was originally lifted from http://subversion.apache.org/style/site.css */
+/*
+ * Hide class="elementid-permalink", except when an enclosing heading
+ * has the :hover property.
+ */
+.headerlink, .elementid-permalink {
+  visibility: hidden;
+}
+h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, dt:hover > .elementid-permalink { visibility: visible }</style>
+<h1 id="abstract">Abstract<a class="headerlink" href="#abstract" title="Permanent link">&para;</a></h1>
+<p>This document gives a basic primer on the wide subject of release signing. See under <a href="#reading">Further reading</a> for links to
+authoritative sources of deeper information.</p>
+<p>Release managers are the target audience.</p>
+<p>This document is informative and does not constitute policy.</p>
+<h1 id="note">Important<a class="headerlink" href="#note" title="Permanent link">&para;</a></h1>
+<p>All new <strong>RSA</strong> keys generated should be at least <strong>4096</strong> bits. <strong>Do not</strong>
+generate new <strong>DSA</strong> keys.</p>
+<p>Recent research has revealed weaknesses in SHA-1, and thus in the DSA and
+1024 bit RSA OpenPGP keys which must use this algorithm. Though no
+realistic attacks have been made public, experience with similar weaknesses
+in MD5 suggests that further advances may well lead to practical attacks
+within the next few years. This accords with current NIST guidance on DSA.</p>
+<p>The future impact of this weakness on Apache can be mitigated by action
+now. What needs to be done is a little involved. So, complete instructions
+have been prepared. Please read and follow them.</p>
+<ul>
+<li>
+<p>Committers without a code signing key should read this document and
+follow these <a href="http://www.apache.org/dev/openpgp.html#generate-key">instructions</a>.</p>
+</li>
+<li>
+<p>Committers with a DSA key or an RSA key of length less than 2048 bits
+should generate a new key for signing releases. The original key does not
+need to be revoked yet. Follow this <a href="http://www.apache.org/dev/key-transition.html">guide</a>.</p>
+</li>
+<li>
+<p>Committers with RSA keys of length 2048 or more do not need to generate a
+new key yet. They should reconfigure their client to avoid the weakness by
+following these <a href="http://www.apache.org/dev/openpgp.html#sha1">instructions</a> and wait for the next
+major OpenPGP revision.</p>
+</li>
+</ul>
+<p>How to find the length of your key is described <a href="#key-length-how-to">here</a>.</p>
+<h1 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h1>
+<div class="toc">
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#note">Important</a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#help">Help Wanted!</a></li>
+<li><a href="#reading">Further Reading</a></li>
+<li><a href="#basic-facts">Basic facts</a></li>
+<li><a href="#keys-policy">The KEYS File</a></li>
+<li><a href="#motivation">Why We Sign Releases</a></li>
+<li><a href="#security-basics">Security Basics</a></li>
+<li><a href="#key-basics">Key Basics</a></li>
+<li><a href="#signing-basics">Signing Basics</a></li>
+<li><a href="#sign-release">How Do I Sign A Release?</a></li>
+<li><a href="#openpgp-ascii-detach-sig">What Is an OpenPGP Compatible ASCII Armored Detached Signature?</a></li>
+<li><a href="#openpgp">What Is OpenPGP?</a></li>
+<li><a href="#pke">What Is Public Key Cryptography?</a></li>
+<li><a href="#detach-sig">What Is An Detached Signature?</a></li>
+<li><a href="#ascii">What Is ASCII Armoring?</a></li>
+<li><a href="#md5">What Is An MD5 Checksum?</a></li>
+<li><a href="#sha-checksum">What is a SHA checksum?</a></li>
+<li><a href="#message-digest">What Is A Message Digest Algorithm?</a></li>
+<li><a href="#web-of-trust">What Is A Web Of Trust?</a></li>
+<li><a href="#link-into-wot">How Do I Link Into A Public Web of Trust?</a></li>
+<li><a href="#key-signing-party">What Is A Key Signing Party?</a></li>
+<li><a href="#apache-wot">How Can I Link My Key Into The Apache Web of Trust?</a></li>
+<li><a href="#verifying-signature">What Does Verifying A Signature Mean?</a></li>
+<li><a href="#check-integrity">How Can I Check The Integrity Of A Release?</a></li>
+<li><a href="#public-key-not-found">What Does 'Public Key Not Found' Mean (When Verifying A Signature)?</a></li>
+<li><a href="#trust">What is a Trusted Key?</a></li>
+<li><a href="#valid-untrusted-vs-invalid-trusted">What Is The Difference Between A Valid Signature from an Untrusted Key And An Invalid Signature from an Untrusted Key?</a></li>
+<li><a href="#fingerprint">What Is A Public Key Fingerprint?</a></li>
+<li><a href="#infeasible">Why Infeasible And Not Impossible?</a></li>
+<li><a href="#where">Where Should I Create The Signatures?</a></li>
+<li><a href="#insecure-memory">What Is 'Insecure Memory' And Should I Be Worried?</a></li>
+<li><a href="#passphrase">What is a Passphrase?</a></li>
+<li><a href="#revocation-cert">What Is A Revocation Certificate?</a></li>
+<li><a href="#revoke-key">How Do I Revoke A Key?</a></li>
+<li><a href="#revocation-certificate-storage">Where Should A Revocation Certificate Be Stored?</a></li>
+<li><a href="#revoke-cert">How Do I Distribute A Revocation Certificate?</a></li>
+<li><a href="#delete-vs-revoke">What Is The Difference Between Deleting And Revoking A Key?</a></li>
+<li><a href="#local-sig">Can I Mark A Key As Locally Trusted?</a></li>
+<li><a href="#safe-practice">How Can I Safely Practice Using OpenPGP?</a></li>
+<li><a href="#public-private">What Is The Difference Between A Public And A Private Key?</a></li>
+<li><a href="#private-key-protection">How Should My Code Signing Private Key Be Protected?</a></li>
+<li><a href="#secure-machine">How Secure Does The Machine Used To Sign Releases Need To Be?</a></li>
+<li><a href="#openpgp-applications">Which Applications Create OpenPGP Compatible Signatures?</a></li>
+<li><a href="#safe-and-secure">How Safe Does The Private Key Need To Be?</a></li>
+<li><a href="#isolated-installation">What Does 'Isolated Installation' Mean?</a></li>
+<li><a href="#key-length">What Key Length Is Recommended?</a></li>
+<li><a href="#md5-security">Is MD5 Still Secure?</a></li>
+<li><a href="#sha1">Is SHA-1 Still Secure?</a></li>
+<li><a href="#sha3">What is SHA-3?</a></li>
+<li><a href="#secure-hash-algorithms">Which Standard Crytographic Hash Algorithms Are Secure?</a></li>
+<li><a href="#generate">How Do You Generate A Code Signing Key?</a></li>
+<li><a href="#user-id">What OpenPGP User-ID Should I Choose For My Code Signing Key?</a></li>
+<li><a href="#key-comment">What OpenPGP Comment Should I Choose For My Code Signing Key?</a></li>
+<li><a href="#keyserver">What Is A Public Key Server?</a></li>
+<li><a href="#keyserver-upload">How Do You Upload A Key To A Public Key Server?</a></li>
+<li><a href="#update-web-of-trust">How Can I Ensure My Local Web Of Trust Is Up To Date?</a></li>
+<li><a href="#export">How Do You Export A Key?</a></li>
+<li><a href="#key-id">What Is A Key ID?</a></li>
+<li><a href="#subkey">What Is A Sub Key?</a></li>
+<li><a href="#email-subkey">How Do I A Use Sub Key To Sign Emails?</a></li>
+<li><a href="#more-information">How Can I Find Out More?</a></li>
+<li><a href="#quick-signing">Is There A Quick Way To Sign Several Distributions?</a></li>
+<li><a href="#transfer-secret-keys">How Can I Transfer A Secret Key?</a></li>
+<li><a href="#two-keys">Why Do Some People Have Two Keys?</a></li>
+<li><a href="#transition">What Is A Transition Period (For Keys)?</a></li>
+<li><a href="#how-to-transition">How Should I Transition From A Short To A Longer Key?</a></li>
+<li><a href="#update-document">I Have A New Key. Which Apache Documents Need To Be Updated?</a></li>
+<li><a href="#rsa">What Is RSA?</a></li>
+<li><a href="#key-length-how-to">How Do I Find The Length Of A Key?</a></li>
+</ul>
+</div>
+<h1 id="help">Help Wanted!<a class="headerlink" href="#help" title="Permanent link">&para;</a></h1>
+<p>Help to finish this document by <a href="http://www.apache.org/dev/infra-site.html">contributing documentation
+patches</a> ! If the information you seek isn't in this
+document, then please submit a patch once the infrastructure folks have
+answered your question.</p>
+<h1 id="reading">Further Reading<a class="headerlink" href="#reading" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p>The <a href="http://www.apache.org/dev/openpgp.html#gnupg">Guide</a> to using GnuPG at Apache</p>
+</li>
+<li>
+<p>The <a href="http://www.apache.org/dev/key-transition.html">Apache Key Transition Guide</a> </p>
+</li>
+<li>
+<p>RFC <a href="http://www.ietf.org/rfc/rfc1321.txt">1321</a> MD5 Message-Digest
+Algorithm</p>
+</li>
+<li>
+<p>RFC <a href="http://www.ietf.org/rfc/rfc2440.txt">2440</a> OpenPGP Message Format</p>
+</li>
+<li>
+<p>RFC <a href="http://www.ietf.org/rfc/rfc3174.txt">3174</a> Secure Hash Algorithm 1
+(SHA1)</p>
+</li>
+<li>
+<p>The GNU Privacy Guard project
+<a href="http://www.gnupg.org/documentation/">documentation</a> </p>
+</li>
+<li>
+<p>An introduction to <a href="http://www.pgpi.org/doc/pgpintro/">PGP public key
+cryptography</a> </p>
+</li>
+<li>
+<p><a href="http://www.schneier.com/book-applied.html">Applied Cryptography</a> by
+Bruce Schneier</p>
+</li>
+<li>
+<p>Windows centric <a href="http://www.mccune.cc/PGPpage2.htm">PGP FAQ</a> by Tom
+McCune</p>
+</li>
+<li>
+<p>Henk Penning's Apache <a href="http://home.apache.org/~henkp/">home page</a> </p>
+</li>
+</ul>
+<p><strong>Note</strong> this is not normative</p>
+<h1 id="basic-facts">Basic facts<a class="headerlink" href="#basic-facts" title="Permanent link">&para;</a></h1>
+<p>Every artifact distributed by the Apache Software Foundation  <em>must</em> be
+accompanied by one file containing an <a href="#openpgp-ascii-detach-sig">OpenPGP
+compatible ASCII armored detached signature</a> and
+another file containing a 
+(<a href="http://www.apache.org/dev/release-signing#sha-checksum">SHA</a> or <a href="http://www.apache.org/dev/release-signing#md5">MD5</a>) checksum.</p>
+<p>MD5 hashes are deprecated; please use SHA for new releases.
+Please note that further use of <code>SHA-1</code> should be <a href="#sha1">avoided</a>.</p>
+<p>The names of these files
+<em>must</em> be formed by adding to the name of the artifact the following
+suffixes:</p>
+<ul>
+<li>
+<p>the signature by suffixing <code>.asc</code> </p>
+</li>
+<li>
+<p>the checksum by suffixing <code>.md5</code> or <code>.sha[1|256|512]</code> (as appropriate)</p>
+</li>
+</ul>
+<p>Release managers <em>must not</em> store private keys used to sign Apache releases
+on ASF hardware.</p>
+<p>See <a href="http://www.apache.org/dev/release-distribution.html#sigs-and-sums">Release policy</a> for details.</p>
+<h1 id="keys-policy">The KEYS File<a class="headerlink" href="#keys-policy" title="Permanent link">&para;</a></h1>
+<p>The KEYS file is a plain text file containing the public key signatures of
+the release managers (and optionally other committers) for the project. For
+example, <a href="http://www.apache.org/dist/ant/KEYS">Apache Ant KEYS</a>. It is
+traditional to include the following header (which explains its usage):
+<code><pre>
+This file contains the PGP keys of various developers.</p>
+<p>Users: pgp &lt; KEYS
+or
+       gpg --import KEYS</p>
+<p>Developers: 
+    pgp -kxa &lt;your name&gt; and append it to this file.
+or
+    (pgpk -ll &lt;your name&gt; &amp;&amp; pgpk -xa &lt;your name&gt;) &gt;&gt; this file.
+or
+    (gpg --list-sigs &lt;your name&gt;
+    &amp;&amp; gpg --armor --export &lt;your name&gt;) &gt;&gt; this file.
+</pre></code>
+The commands above will generate a descriptive comment describing the key,
+followed by the key itself.
+[Key handling software ignores the comments when importing a key file]</p>
+<p>The KEYS file is stored alongside the release archives to which it applies, e.g. at the top
+level of the ASF mirror area for the project.
+This is to ensure that it is available for download
+by users, and that it is automatically archived with historic releases.</p>
+<p>For example, the Ant KEYS file is in the directory <a href="http://www.apache.org/dist/ant">http://www.apache.org/dist/ant</a>.
+The corresponding SVN area is at <a href="https://dist.apache.org/repos/dist/release/ant">https://dist.apache.org/repos/dist/release/ant</a>.</p>
+<p>Since the KEYS may be needed to check signatures for archived releases, it is important
+that all keys that have ever been used to sign releases are retained in the file. Entries
+should only be added (as described above), not removed.</p>
+<p><strong>Note:</strong> this system will be replaced by a better process in the near
+future. In preparation, please ensure that public keys are connected as
+strongly as possible to the Apache <a href="#web-of-trust">web of trust</a> and are
+available from the major <a href="#keyserver">public key servers</a>.</p>
+<p><a href="#pke">Applied cryptography</a> is a subject that has considerable depth.
+Luckily, it's possible to get started signing releases without being an
+expert. Just remember that (from time to time) you will encounter
+situations that will require research and learning. Hopefully the
+<a href="#faq">FAQ</a> will be a reasonable first port of call.</p>
+<p>You will need an <a href="#openpgp-applications">application</a> to manage keys and
+create signatures. <a href="http://www.gnupg.org/">GNU Privacy Guard</a> is
+recommended and the Apache documentation generally assumes that's what
+you're using. (Documentation patches for other tools welcomed.) Read the
+<a href="http://www.apache.org/dev/openpgp.html#gnupg">Apache usage guide</a> and keep the
+<a href="http://www.gnupg.org/gph/en/manual.html">manual</a> handy. Note that GnuPG
+can handle MD5 and SHA checksums as well as PGP signatures. It is your
+one-stop shop, cross-platform tool for release signing and verification.</p>
+<p>It can be hard for newbies to be confident that they have executed
+operations correctly. Consider doing some <a href="#safe-practice">practice</a> first.</p>
+<h1 id="motivation">Why We Sign Releases<a class="headerlink" href="#motivation" title="Permanent link">&para;</a></h1>
+<p>A signature allows anyone to verify that a file is identical to the one
+created by the Apache release manager. Using a signature:</p>
+<ul>
+<li>
+<p>users can make sure that what they received has not been modified in any
+way, either accidentally via a faulty transmission channel, or
+intentionally (with or without malicious intent)</p>
+</li>
+<li>
+<p>the Apache infrastructure team can verify the identity of a file</p>
+</li>
+</ul>
+<p><a href="#openpgp">OpenPGP</a>  <a href="#verifying-signature">signatures</a> confer the usual
+advantages of digital signatures: <a href="http://www.pgpi.org/doc/pgpintro/#p12">authentication, integrity and
+non-repudiation</a>. <a href="#md5">MD5</a> and
+<a href="#sha-checksum">SHA</a> checksums only provide the integrity part as they are
+not encrypted.</p>
+<h1 id="security-basics">Security Basics<a class="headerlink" href="#security-basics" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><a href="#private-key-protection">Protect</a> your <a href="#public-private">private key</a> </p>
+</li>
+<li>
+<p>Choose a <a href="#passphrase">good passphrase</a> </p>
+</li>
+<li>
+<p>Opt for a reasonably <a href="#key-length">long key length</a> </p>
+</li>
+</ul>
+<h1 id="key-basics">Key Basics<a class="headerlink" href="#key-basics" title="Permanent link">&para;</a></h1>
+<p>To sign releases, you need to <a href="#generate">generate</a> a new master key-pair
+for code signing. Follow these <a href="http://www.apache.org/dev/openpgp.html#generate-key">instructions</a>.</p>
+<h1 id="signing-basics">Signing Basics<a class="headerlink" href="#signing-basics" title="Permanent link">&para;</a></h1>
+<p>Signatures should be <a href="#openpgp-ascii-detach-sig">ASCII armored and
+detached</a>.</p>
+<p>Your <a href="#public-private">public key</a> should be <a href="#export">exported</a> and the
+result appended to the appropriate<code> <a href="#keys-policy">KEYS</a>
+</code>file(s).</p>
+<p>That's all you need to know to sign a release.</p>
+<h1 id="sign-release">How Do I Sign A Release?<a class="headerlink" href="#sign-release" title="Permanent link">&para;</a></h1>
+<p>Create a <a href="#openpgp-ascii-detach-sig">OpenPGP compatible ASCII armored detached
+signature</a> for the released artifact. Upload the
+signature with the released artifact.</p>
+<p>See <a href="#basics">here</a> for a basic overview.</p>
+<h1 id="openpgp-ascii-detach-sig">What Is an OpenPGP Compatible ASCII Armored Detached Signature?<a class="headerlink" href="#openpgp-ascii-detach-sig" title="Permanent link">&para;</a></h1>
+<p>It is an <a href="#openpgp">OpenPGP</a> compatible <a href="#ascii">ASCII armored</a>  <a href="#detach-sig">detached
+signature</a>.</p>
+<p>To create one using <a href="http://www.gnupg.org/">GNU Privacy Guard</a> for file
+<code>foo.tar.gz</code> type:
+<code><pre>
+   $ gpg --armor --output foo.tar.gz.asc --detach-sig foo.tar.gz 
+</pre></code></p>
+<h1 id="openpgp">What Is OpenPGP?<a class="headerlink" href="#openpgp" title="Permanent link">&para;</a></h1>
+<p><a href="http://www.openpgp.org/">OpenPGP</a> is an
+<a href="http://www.ietf.org/rfc/rfc2440.txt">RFC</a> describing a system for
+interoperable <a href="#pke">public key cryptography</a>. Various implementations
+exist. Apache recommends <em>GNU Privacy Guard</em>.</p>
+<p><a href="http://www.gnupg.org/">GNU Privacy Guard</a> (GnuPG) is an open source
+OpenPGP compatible implementation. It comes with <a href="http://www.gnupg.org/(en)/documentation/guides.html">good
+documentation</a>
+describing not just GnuPG but also giving a good general introduction to
+public key cryptography. A guide to using GnuPG at Apache is
+<a href="http://www.apache.org/dev/openpgp.html#gnupg">available</a>.</p>
+<h1 id="pke">What Is Public Key Cryptography?<a class="headerlink" href="#pke" title="Permanent link">&para;</a></h1>
+<p>Public key cryptography is asymmetric. One key can be used to encrypt a
+message which only the other key can decrypt. Knowledge of the first key
+can be made public without compromising the security of the second key. One
+key is therefore called the public key and one the private key.</p>
+<p>When using public key cryptography, the public key can be freely
+distributed but the private key must be secret. It is vital that private
+key files are <a href="#private-key-protection">protected</a>. Private keys are
+typically stored in files protected by symmetric encryption. Strong
+<a href="#passphrase">passphrases</a> must be chosen to protect them.</p>
+<h1 id="detach-sig">What Is An Detached Signature?<a class="headerlink" href="#detach-sig" title="Permanent link">&para;</a></h1>
+<p>A digital signature is created from an original document using a <a href="#pke">private
+key</a>. Possession of the corresponding public key allows verification
+that a given file is identical to the original document. An attached
+signature is attached to the document whereas a detached signature is
+contained in a separate file.</p>
+<h1 id="ascii">What Is ASCII Armoring?<a class="headerlink" href="#ascii" title="Permanent link">&para;</a></h1>
+<p>An encoding format that converts a binary file into a string of ASCII
+characters. This format is more human readable and more portable.</p>
+<h1 id="md5">What Is An MD5 Checksum?<a class="headerlink" href="#md5" title="Permanent link">&para;</a></h1>
+<p>MD5 is a <a href="http://www.faqs.org/rfcs/rfc1321.html">well known</a>  <a href="#message-digest">message
+digest algorithm</a>.</p>
+<p>Many tools are available to calculate these sums. For example,
+<a href="http://www.openssl.org/">OpenSSL</a> can be used:
+<code><pre>
+$ openssl md5 &lt; file
+</pre></code>
+Platform specific applications are also common. For example <code>md5sum</code> on
+linux:
+<code><pre>
+$ md5sum file
+</pre></code>
+With GnuPG:
+<code><pre>
+  $ gpg --print-md MD5 [fileName] &gt; [fileName].md5
+</pre></code></p>
+<p>Please run the command in the same directory as the file so the output only contains
+the file name with no directory prefixes.</p>
+<p>Please note that the security of MD5 is now <a href="#md5-security">questionable</a>
+and is only useful as part of a defense in depth.</p>
+<h1 id="sha-checksum">What is a SHA checksum?<a class="headerlink" href="#sha-checksum" title="Permanent link">&para;</a></h1>
+<p>Like <a href="#md5">MD5</a> , <a href="http://www.ietf.org/rfc/rfc3174.txt">SHA</a> is another
+<a href="#message-digest">message digest</a> algorithm.</p>
+<p>Using GnuPG, you can create a SHA1 signature as follows:
+<code><pre>
+  $ gpg --print-md SHA1 [fileName] &gt; [fileName].sha1
+</pre></code>
+Please note that further use of <code>SHA-1</code> should be <a href="#sha1">avoided</a>.</p>
+<p><code>SHA256</code> and <code>SHA512</code> use the same <code>SHA</code> algorithm family with longer hash
+lengths (256 and 512 bits respectively). These longer variations are less
+vulnerable to the weaknesses found in the algorithm family than <code>SHA1</code>.
+SHA512 is <a href="#sha1">recommended</a>.</p>
+<p>To create a <code>SHA512</code> checksum use:
+<code><pre>
+  $ gpg --print-md SHA512 [fileName] &gt; [fileName].sha512
+</pre></code></p>
+<p>Please run the command in the same directory as the file so the output only contains
+the file name with no directory prefixes.</p>
+<p>Other members of the <code>SHA</code> family (with different hash lengths) are rarely
+used.</p>
+<p>This family of algorithms will be retired once <a href="#sha3">SHA3</a> is available.</p>
+<h1 id="message-digest">What Is A Message Digest Algorithm?<a class="headerlink" href="#message-digest" title="Permanent link">&para;</a></h1>
+<p>A message digest algorithm takes a document and produces a much smaller
+hash of that document. A good algorithm will produce different digests for
+very similar documents. A good algorithm makes it <a href="#infeasible">infeasible</a>
+to create a message matching a given hash.</p>
+<p>A trusted digest for a document can be used to verify the contents of an
+untrusted file. The small size of the digest allows it to be delivered over
+a secure but expensive channel whilst the untrusted file is delivered over
+an insecure but inexpensive one. This is useful when distributing releases.</p>
+<h1 id="web-of-trust">What Is A Web Of Trust?<a class="headerlink" href="#web-of-trust" title="Permanent link">&para;</a></h1>
+<p>It is difficult to personally verify the identity of all useful <a href="#pke">public
+keys</a>. However, having verified the identity of only a small number
+of public keys it is possible to deduce the identity of public keys trusted
+by the owners of these keys. This process can be repeated. This extended
+graph of trusted identities is termed a <a href="http://en.wikipedia.org/wiki/Web_of_trust">web of
+trust</a>.</p>
+<p>Webs of trust can be used to solve the problem of verifying the identity of
+public keys.</p>
+<p><strong>Note:</strong> in order to take full advantage of a web of trust, it is
+important to actively build your web of trust into the major public webs of
+trust. Conferences are an ideal opportunity but you must come
+<a href="#link-into-wot">prepared</a>.</p>
+<p>For more information read 
+<a href="http://home.apache.org/~henkp/">Henk Penning's Apache home page</a> and the 
+<a href="http://www.gnupg.org/(en)/documentation/guides.html">GNU Privacy Guard User Guide</a>.</p>
+<h1 id="link-into-wot">How Do I Link Into A Public Web of Trust?<a class="headerlink" href="#link-into-wot" title="Permanent link">&para;</a></h1>
+<p>By an existing member of that <a href="#web-of-trust">web of trust</a> signing your
+public key to verify your identity. See Henk Penning's 
+<a href="http://home.apache.org/~henkp/sig/pgp-key-signing.txt">Key Signing HOWTO</a> </p>
+<p>A short guide is <a href="http://www.apache.org/dev/openpgp.html#wot">available</a>.</p>
+<h1 id="key-signing-party">What Is A Key Signing Party?<a class="headerlink" href="#key-signing-party" title="Permanent link">&para;</a></h1>
+<p>A key signing party is a meeting organised to allow the exchange of public
+keys and so extension of the <a href="#web-of-trust">web of trust</a>.</p>
+<p>See the <a href="http://www.cryptnet.net/fdp/crypto/keysigning_party/en/keysigning_party.html">Keysigning Party HOWTO</a>
+and Henk Penning's 
+<a href="http://home.apache.org/~henkp/sig/pgp-key-signing.txt">Key Signing HOWTO</a> </p>
+<h1 id="apache-wot">How Can I Link My Key Into The Apache Web of Trust?<a class="headerlink" href="#apache-wot" title="Permanent link">&para;</a></h1>
+<p>By meeting other Apache committers face-to-face and <a href="#link-into-wot">exchanging public
+keys</a>. There are several ways to achieve this:</p>
+<ul>
+<li>
+<p><a href="#key-signing-party">Key signing parties</a> are organised at each
+<a href="http://www.apachecon.com/">ApacheCon</a>.</p>
+</li>
+<li>
+<p>If you are not able to attend (or the conference is a long way off) then
+consider organising a face-to-face meeting of <a href="http://people.apache.org/map.html">local
+committers</a>.</p>
+</li>
+<li>
+<p>Subscribe to the <code>party</code> list and when you visit a new city, see if
+committers want to meet up.</p>
+</li>
+</ul>
+<p>See Henk Penning's <a href="http://home.apache.org/~henkp/sig/pgp-key-signing.txt">Key Signing HOWTO</a> </p>
+<h1 id="verifying-signature">What Does Verifying A Signature Mean?<a class="headerlink" href="#verifying-signature" title="Permanent link">&para;</a></h1>
+<p><a href="#pke">Public key cryptography</a> can be used to test whether a particular
+file is identical (in content) to an original by verifying a
+<a href="#detach-sig">signature</a>. The signature file is a <a href="#message-digest">digest</a>
+of the original file signed by a private key which attests to the digest's
+authenticity.</p>
+<p>For example, when using <a href="http://www.gnupg.org/">GNU Privacy Guard</a> you
+verify the signature <code>foo-1.0.tar.gz.asc</code> for release <code>foo-1.0.tar.gz</code>
+using the following command:
+<code><pre>
+$ gpg --verify foo-1.0.tar.gz.asc foo-1.0.tar.gz
+</pre></code>
+A signature is valid, if <code>gpg</code> verifies the <code>.asc</code>
+as a <code>good signature</code>, and doesn't complain about expired
+or revoked keys. Technically :
+<code><pre>
+$ gpg --verify --status-fd 1 foo-1.0.tar.gz.asc foo-1.0.tar.gz
+</pre></code>
+should classify the <code>.asc</code> as a <code>GOODSIG</code>.</p>
+<p>Trust is required in the identity of the public key that made the signature
+and that the signature is for the original in question (and not some other
+file). When verifying a release from an untrusted source (for example, over
+P2P file sharing or from a mirror) it is therefore important to download
+the signature from a trusted source. Signatures for all Apache releases are
+available directly from <code>www.apache.org</code> and should be downloaded from
+there.</p>
+<h1 id="check-integrity">How Can I Check The Integrity Of A Release?<a class="headerlink" href="#check-integrity" title="Permanent link">&para;</a></h1>
+<p><a href="#md5">MD5</a> and <a href="#sha-checksum">SHA</a> checksums provide a simple, means of
+verifying the integrity of a download. You can simply create a checksum (in
+the same way as the release manager) after download, and compare the result
+to the checksum downloaded from the main Apache site. Obviously, this
+process does not provide for <a href="http://www.pgpi.org/doc/pgpintro/#p12">authentication and
+non-repudiation</a> as anybody can
+create the same checksum.</p>
+<p>The integrity of a release can also be checked by <a href="#verifying-signature">verifying the
+signature</a>. More knowledge is required to correctly
+interpret the result but it does provide authentication and
+non-repudiation. If you are connected to the Apache <a href="#web-of-trust">web of
+trust</a> then this also offers superior security.</p>
+<h1 id="public-key-not-found">What Does 'Public Key Not Found' Mean (When Verifying A Signature)?<a class="headerlink" href="#public-key-not-found" title="Permanent link">&para;</a></h1>
+<p>Before a signature can be verified, the public key is required.</p>
+<p>For example, when using <a href="http://www.gnupg.org/">GNU Privacy Guard</a> if you
+have never imported the appropriate public key a message similar to the
+following will be displayed:
+<code><pre>
+$ gpg --verify foo-1.0.tar.gz.asc foo-1.0.tar.gz
+gpg: Signature made Mon Sep 26 22:26:18 2005 BST using RSA key ID 00000000
+gpg: Can't check signature: public key not found
+</pre></code>
+Unknown keys can often be downloaded from <a href="#keyserver">public key servers</a>.
+However, these should only be <a href="#trust">trusted</a> through a <a href="#web-of-trust">web of
+trust</a>.</p>
+<p>Apache projects normally keep the developers' public keys in a file called
+<code>KEYS</code>. You may be able to find that file on the project's website, or in
+their code repository. Use
+<code><pre>
+  $ gpg --import KEYS
+</pre></code>
+to import the public keys.</p>
+<h1 id="trust">What is a Trusted Key?<a class="headerlink" href="#trust" title="Permanent link">&para;</a></h1>
+<p><a href="#openpgp">OpenPGP</a> uses a <a href="#web-of-trust">web of trust</a>. The owner of a
+public key who trusts the identity of a second key may mark this key as
+trusted by signing it. This has several major effects:</p>
+<ul>
+<li>
+<p>In future, no <a href="#valid-untrusted-vs-invalid-trusted">untrusted key warning will be
+issued</a> when a valid signature for
+this key is verified.</p>
+</li>
+<li>
+<p>Keys trusted by the owner of the key may also become trusted. In other
+words, a key whose identity has been confirmed by the owner of a key whose
+identity you trust may be automatically trusted. This behavior is typically
+configurable.</p>
+</li>
+<li>
+<p>The next time you export your key, those who trust your key may start to
+trust the identity of the trusted key.</p>
+</li>
+</ul>
+<p>The transitive nature of the web of trust places a responsibility on the
+owner to verify the identity of the owner of those keys marked as trusted.</p>
+<p>For more information read <a href="http://home.apache.org/~henkp/">Henk Penning's Apache home
+page</a> and the <a href="http://www.gnupg.org/(en)/documentation/guides.html">GNU Privacy Guard User
+Guide</a>.</p>
+<h1 id="valid-untrusted-vs-invalid-trusted">What Is The Difference Between A Valid Signature from an Untrusted Key And An Invalid Signature from an Untrusted Key?<a class="headerlink" href="#valid-untrusted-vs-invalid-trusted" title="Permanent link">&para;</a></h1>
+<p>Trustfulness and validity are different concepts. You may elect to trust
+the identity of a key to various degrees (or not at all). For a particular
+key, a particular signature for a particular file may be valid (in other
+words, created by the private key from an identical file) or invalid
+(either corrupt or created from a different file).</p>
+<p>You should not trust a file with an invalid signature. You can trust a file
+with a valid signature as much as you trust the identity of key that was
+used to verify the signature.</p>
+<p>For example, when using <a href="http://www.gnupg.org/">GNU Privacy Guard</a> a
+message similar to the following indicates that the signature is invalid:
+<code><pre>
+$ gpg --verify foo-1.0.tar.gz.asc foo-1.0.tar.gz
+gpg: Signature made Mon Sep 26 22:26:18 2005 BST using RSA key ID 00000000
+gpg: BAD signature from "someone@example.org"
+</pre></code>
+whereas a message similar to the following indicates that the signature is
+valid but for an untrusted key:
+<code><pre>
+$ gpg --verify foo-1.0.tar.gz.asc foo-1.0.tar.gz
+gpg: Signature made Mon Sep 26 22:05:28 2005 BST using RSA key ID 00000000
+gpg: Good signature from "someone@example.org"
+gpg:                 aka "someone@anotherdomain.org"
+gpg: checking the trustdb
+gpg: checking at depth 0 signed=1 ot(-/q/n/m/f/u)=0/0/0/0/0/1
+gpg: checking at depth 1 signed=0 ot(-/q/n/m/f/u)=1/0/0/0/0/0
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the
+owner.
+Primary key fingerprint: 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+</pre></code>
+The <a href="#fingerprint">fingerprint</a> may be used to ascertain the appropriate
+level of trust to assign to the key.</p>
+<h1 id="fingerprint">What Is A Public Key Fingerprint?<a class="headerlink" href="#fingerprint" title="Permanent link">&para;</a></h1>
+<p>Public keys are long and even when <a href="#ascii">ASCII armored</a> are not very
+easy for humans to understand or compare. A fingerprint is a shorter
+<a href="#message-digest">digest</a> of the key formatted in a way that makes it
+easier for humans to read and compare.</p>
+<h1 id="infeasible">Why Infeasible And Not Impossible?<a class="headerlink" href="#infeasible" title="Permanent link">&para;</a></h1>
+<p>Responsible cryptography talks about infeasible cracks (rather than
+impossible ones) since this is more accurate. All current practical methods
+can be subjected to brute force attacks and so can be cracked. So, a good
+question is whether attacks are feasible given the current state of the
+art.</p>
+<h1 id="where">Where Should I Create The Signatures?<a class="headerlink" href="#where" title="Permanent link">&para;</a></h1>
+<p>Creating signatures requires the private key. Limited copies should be kept
+of the private key and all must be kept confidential. Though the file used
+to store the private key is typically protected by encryption, it is
+vulnerable to dictionary attacks on the <a href="#passphrase">passphrase</a>. This
+file must therefore be kept secret. So, signatures should be created on the
+machine used to store the private key.</p>
+<p>It is important that the private key is stored on secure hardware with
+limited read permissions and is protected by a good
+<a href="#passphrase">passphrase</a>. Consider using removable media or an <a href="#isolated-installation">isolated
+installation</a>.</p>
+<p>A master private key used to sign Apache artifacts (or to secure
+communications with the ASF) is particularly valuable. If you want or need
+to be able to create signatures for other purposes (for example, signing
+email messages) in other (less secure) locations it is recommended that you
+create <a href="#email-subkey">multiple sub keys</a> and use sub keys for signing in
+less secure locations.</p>
+<p>The private key <em>must not</em> be store on any ASF machine. So, signatures
+<em>must not</em> be created on ASF machines.</p>
+<h1 id="insecure-memory">What Is 'Insecure Memory' And Should I Be Worried?<a class="headerlink" href="#insecure-memory" title="Permanent link">&para;</a></h1>
+<p>When you use <a href="http://www.gnupg.org/">GNU Privacy Guard</a> you may see a
+warning similar to:
+<code><pre>
+gpg: WARNING: using insecure memory!
+gpg: please see http://www.gnupg.org/faq.html for more information
+</pre></code>
+If you are using GnuPG on Apache hardware, please read <a href="#where">this</a>.
+Sensitive operations using a private key <em>must not</em> be executed on ASF
+hardware.</p>
+<p>If you encounter this issue elsewhere then it indicates that GnuPG cannot
+lock memory pages which means they may be swapped out to disc. It would
+then be feasible for an attacker who had gained access to the machine to
+read the private key from the swap file. For more details, read the
+<a href="http://www.gnupg.org/faq.html">FAQ</a>.</p>
+<h1 id="passphrase">What is a Passphrase?<a class="headerlink" href="#passphrase" title="Permanent link">&para;</a></h1>
+<p>The term <em>passphrase</em> is often used in cryptography for what might be
+better known as a password in other contexts. For example, an
+<a href="#openpgp">OpenPGP</a> private key is typically stored to disc in an file
+encrypted by a symmetric cypher keyed by a passphrase. This passphrase is
+one of the weakest elements in the system: should anyone else gain access
+to the file then a dictionary attack will be feasible on a weak passphrase.
+So, choosing a strong passphrase is very important.</p>
+<p>Passphrases are (unlike passwords) typically unlimited in length. Long
+passphrases are recommended. This allows sequences of (at least seven)
+unrelated words to be used as well as more conventional mixtures of symbols
+and alphanumerics.</p>
+<p>Note that even a good passphrase will offer only limited protection. Given
+the encrypted file and enough time, a determined cracker will be able to
+break any passphrase. A good passphrase will buy important time in the
+event of a compromise but is no substitute for keeping the private key
+<a href="#safe-and-secure">safe and secure</a> in the first place.</p>
+<h1 id="revocation-cert">What Is A Revocation Certificate?<a class="headerlink" href="#revocation-cert" title="Permanent link">&para;</a></h1>
+<p><a href="#openpgp">OpenPGP</a> defines a special type of signed message called a
+<em>revocation certificate</em>. This message indicates that the signer believes
+that the key is no longer trustworthy. Typically, the revocation
+certificate will be signed by the key to be revoked (though the key may
+specify that other keys should be trusted for revocation). The type of
+revocation and the comment included may be used to judge how much trust to
+place in a good signature by a revoked key.</p>
+<p>A revocation certificate should be generated for each public key used.
+These should be stored safely, securely and separately from the public key.</p>
+<p>Each revocation certificates has a type specifying a general (machine
+readable) reason for the revocation:</p>
+<ul>
+<li>
+<p>No reason specified</p>
+</li>
+<li>
+<p>Key has been compromised</p>
+</li>
+<li>
+<p>Key is superseded</p>
+</li>
+<li>
+<p>Key is no longer used</p>
+</li>
+</ul>
+<p>It is recommended that certificates are created to cover the first two
+cases. Note that if a key is lost or can no longer be accessed (due to
+media failure, say) it is best to assume that the key has been potentially
+compromised. It is recommended that revocation certificates are printed and
+stored safely to guard against media failure.</p>
+<p>An <a href="#ascii">ASCII armored</a> revocation certificate for key <code>bob</code> can be
+generated and saved to <code>revoke.asc</code> using <a href="http://www.gnupg.org/">GNU Privacy
+Guard</a> as follows:
+<code><pre>
+$ gpg --output revoke.asc --armor --gen-revoke bob
+</pre></code>
+The certificate produced should be <a href="#revocation-certificate-storage">securely
+stored</a>.</p>
+<p>If you are preparing a revocation certificate for future use, it is
+recommended that you test it. See <a href="#safe-practice">safe practice</a>.</p>
+<h1 id="revoke-key">How Do I Revoke A Key?<a class="headerlink" href="#revoke-key" title="Permanent link">&para;</a></h1>
+<p>To revoke a key (given a certificate) using <a href="http://www.gnupg.org/">GNU Privacy
+Guard</a> import the <a href="#revocation-cert">revocation
+certificate</a> :
+<code><pre>
+$ gpg --import revoke.asc 
+gpg: key 4A03679A: "Some User &lt;someuser@example.org&gt;" revocation
+certificate imported
+gpg: Total number processed: 1
+gpg:    new key revocations: 1
+</pre></code></p>
+<h1 id="revocation-certificate-storage">Where Should A Revocation Certificate Be Stored?<a class="headerlink" href="#revocation-certificate-storage" title="Permanent link">&para;</a></h1>
+<p>The revocation certificate should be stored securely and separately from
+the key it revokes. Burning onto CDROM or printing out onto hard copy are
+good solutions.</p>
+<h1 id="revoke-cert">How Do I Distribute A Revocation Certificate?<a class="headerlink" href="#revoke-cert" title="Permanent link">&para;</a></h1>
+<p>In the event of a compromise, a <a href="#revocation-cert">revocation certificate</a>
+needs to be distributed to those using the key. This process needs to be a
+mirror of the process by which the original key was distributed.</p>
+<ul>
+<li>
+<p>The Apache infrastructure team should be informed by a post containing
+the revocation certificate</p>
+</li>
+<li>
+<p>The KEYS files containing the original key should be updated with the
+revocation certificate</p>
+</li>
+<li>
+<p>The revocation certificate should be uploaded to the major keyserver
+networks</p>
+</li>
+<li>
+<p>An announcement should be posted to the appropriate lists with the
+revocation certificate attached</p>
+</li>
+</ul>
+<h1 id="delete-vs-revoke">What Is The Difference Between Deleting And Revoking A Key?<a class="headerlink" href="#delete-vs-revoke" title="Permanent link">&para;</a></h1>
+<p>When a key is deleted from a keyring, it is simply removed. It can be added
+again later.</p>
+<p>When a key is revoked, the key is marked in the key ring. Whenever a
+message signed by this key is verified in the future, the user will be
+warned that the key has been revoked.</p>
+<p>For example, when verifying a revoked key, <a href="http://www.gnupg.org/">GNU Privacy
+Guard</a> issues the following comment:
+<code><pre>
+$ gpg --verify message.asc.message 
+gpg: Signature made Sat Apr  8 09:28:31 2006 BST using DSA key ID 4A03679A
+gpg: Good signature from "Some User &lt;someuser@example.org&gt;"
+gpg: checking the trustdb
+gpg: checking at depth 0 signed=0 ot(-/q/n/m/f/u)=0/0/0/0/0/1
+gpg: WARNING: This key has been revoked by its owner!
+gpg:          This could mean that the signature is forgery.
+gpg: reason for revocation: Key has been compromised
+gpg: revocation comment: 
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the
+owner.
+Primary key fingerprint: 82D1 169B E6F1 9D14 DA76  A5DD 968E 66E4 4A03 679A
+</pre></code></p>
+<h1 id="local-sig">Can I Mark A Key As Locally Trusted?<a class="headerlink" href="#local-sig" title="Permanent link">&para;</a></h1>
+<p>On occasion, a key may be trusted by the user (who understands the risks)
+but is not considered trustworthy enough to be exported to the <a href="#web-of-trust">web of
+trust</a>.</p>
+<p><a href="#openpgp">OpenPGP</a> allows keys to be signed as local only. These trust
+relationships will not be exported to the public web of trust but will be
+treated as trusted when the key ring is used locally.</p>
+<p>For example, with <a href="http://www.gnupg.org/">GNU Privacy Guard</a> use:
+<code><pre>
+$ gpg --lsign-key someuser
+</pre></code></p>
+<h1 id="safe-practice">How Can I Safely Practice Using OpenPGP?<a class="headerlink" href="#safe-practice" title="Permanent link">&para;</a></h1>
+<p>Use separate environments each with a different practice keyring.</p>
+<p>For example, using <a href="http://www.gnupg.org/">GNU Privacy Guard</a> :</p>
+<ul>
+<li>
+<p><em>(First time only)</em> Create a directory to contain the keyring</p>
+</li>
+<li>
+<p>Open the shell to be configured to use this keyring</p>
+</li>
+<li>
+<p>Change to the directory</p>
+</li>
+<li>
+<p><em>(First time only)</em>  <code>$ mkdir -m 700.gnupg</code> </p>
+</li>
+<li>
+<p>Setup environment <code>$ export GNUPGHOME=.gnupg</code> </p>
+</li>
+</ul>
+<h1 id="public-private">What Is The Difference Between A Public And A Private Key?<a class="headerlink" href="#public-private" title="Permanent link">&para;</a></h1>
+<p>A public key is used for verifying signatures and encrypting messages, a
+private key for generating signatures and decrypting messages. Public keys
+can be freely distributed safely whereas private keys must be kept
+<a href="#safe-and-secure">protected</a>. More details <a href="#pke">here</a>.</p>
+<h1 id="private-key-protection">How Should My Code Signing Private Key Be Protected?<a class="headerlink" href="#private-key-protection" title="Permanent link">&para;</a></h1>
+<p>Anyone who possesses a copy of a <a href="#public-private">private key</a> used to
+<a href="#sign-release">sign</a> releases can create doctored releases with valid
+signatures. If this person intends harm then the consequences could be
+serious indeed.</p>
+<p>It is therefore very important that this private key is kept secret.</p>
+<ul>
+<li>
+<p>Only sign releases on a <a href="#secure-machine">secure machine</a>.</p>
+</li>
+<li>
+<p>Keep your <a href="#openpgp-applications">signing application</a> fully patched.</p>
+</li>
+<li>
+<p>Keep the key file <a href="#safe-and-secure">safe and secret</a>.</p>
+</li>
+<li>
+<p>Choose a good <a href="#passphrase">passphrase</a>.</p>
+</li>
+</ul>
+<h1 id="secure-machine">How Secure Does The Machine Used To Sign Releases Need To Be?<a class="headerlink" href="#secure-machine" title="Permanent link">&para;</a></h1>
+<p>If the code signing machine is
+<a href="http://www.catb.org/~esr/jargon/html/O/owned.html">owned</a> then it is only
+a matter of time before the key is compromised.</p>
+<p>At a minimum, the machine should well maintained (kept up to date with
+security patches, use appropriate anti-virus and firewall software). The
+ideal is an isolated, well maintained installation used only for creating
+releases. This can be achieved with a little effort by creating an
+<a href="#isolated-installation">isolated installation</a> on a separate hard disc
+(which is physically disconnected when not in use signing releases) or a
+live CD.</p>
+<h1 id="openpgp-applications">Which Applications Create OpenPGP Compatible Signatures?<a class="headerlink" href="#openpgp-applications" title="Permanent link">&para;</a></h1>
+<p>There are many applications available (some commercial, some freeware, some
+software libre). Whichever one you choose, please subscribe to the
+appropriate security lists and keep the application fully patched.</p>
+<p>Here are some used by ASF release managers:</p>
+<ul>
+<li><strong>Recommended</strong>  <a href="http://www.gnupg.org/">GNU Privacy Guard</a>  <em>Software
+Libre</em> </li>
+</ul>
+<h1 id="safe-and-secure">How Safe Does The Private Key Need To Be?<a class="headerlink" href="#safe-and-secure" title="Permanent link">&para;</a></h1>
+<p>It is vital that the private key is kept safe and secure. Though the file
+is encrypted using a <a href="#passphrase">passphrase</a> , given enough time any
+determined cracker will be able to break that encryption. It is therefore
+essential that the private key file is kept safe and secure.</p>
+<p>Basic precautions should include ensuring that the directories are readable
+only by the user.</p>
+<p>However, it is recommended that for code signing keys additional measures
+are taken. The window of opportunity can be reduced by either using a
+<a href="#isolated-installation">isolated installation</a> or by storing the private
+key on removable media (which should be removed to secure storage when not
+being used to sign releases).</p>
+<h1 id="isolated-installation">What Does 'Isolated Installation' Mean?<a class="headerlink" href="#isolated-installation" title="Permanent link">&para;</a></h1>
+<p>An installation which is inaccessible when not being used to sign releases.
+For example, create an installation on a separate hard disc or use a live
+CD.</p>
+<h1 id="key-length">What Key Length Is Recommended?<a class="headerlink" href="#key-length" title="Permanent link">&para;</a></h1>
+<p>There is no good, simple answer to this question.</p>
+<p>The number of operations required to break a key by brute force increases
+with key size. However, the cost of using the key also rises. So, the
+planned usage of the key must be a consideration. Keys used for code
+signing will only be used rarely and in situations where performance is not
+the main concern. This is a reason to err in favor of long key lengths.</p>
+<p>Over time, the practice cost of attacking a key (of a given length) by
+brute force falls as computing power increases. So, a key whose length
+seems adequate today may be seem too short in a few years time. This is a
+significant issue for long-lived keys such as those used to sign ASF
+releases. Again, this is a reason to err in the favor of longer key
+lengths.</p>
+<p>Now that there is doubt about the medium term security of <a href="#sha1">SHA-1</a> ,
+the DSA keys and 1024 bit RSA keys (which depend on this algorithm) should
+be avoided for new keys. It is uncertain whether 2048 bit RSA keys will be
+strong enough to remain secure until <a href="#sha3">SHA3</a> (and the next generation
+of standards) arrives. It is therefore recommended that new keys should be
+at least 4096 bit RSA (the longest widely supported key length).</p>
+<h1 id="md5-security">Is MD5 Still Secure?<a class="headerlink" href="#md5-security" title="Permanent link">&para;</a></h1>
+<p>There is no good, simple answer to this question.</p>
+<p>Though <a href="#infeasible">feasible</a> collision attacks are known, they are still
+computationally expensive. MD5 may still be useful as an additional layer
+in a defense in depth. Not recommended.</p>
+<h1 id="sha1">Is SHA-1 Still Secure?<a class="headerlink" href="#sha1" title="Permanent link">&para;</a></h1>
+<p>There is no good, simple answer to this question.</p>
+<p>Research has revealed weaknesses in this algorithm. Though there are no
+practical attacks known at the time of writing, experiences with similar
+weaknesses in <a href="#md5-security">MD5</a> suggest that efforts should be made now
+to move away from this algorithm.</p>
+<p>Breaking the longest members of this family ( <code>SHA512</code> and <code>SHA256</code> ) is
+still considered <a href="#infeasible">infeasible</a>. Until <a href="#sha3">SHA-3</a> is
+available, new uses of SHA-1 should be avoided and SHA512 (or SHA256) used
+instead.</p>
+<p>Configuration instructions for GnuPG can be found
+<a href="http://www.apache.org/dev/openpgp.html#sha1">here</a>.</p>
+<h1 id="sha3">What is SHA-3?<a class="headerlink" href="#sha3" title="Permanent link">&para;</a></h1>
+<p>SHA-3 is the designation for a new <a href="#message-digest">cryptographic hash
+algorithm</a> to replace the SHA family. A public
+<a href="http://csrc.nist.gov/groups/ST/hash/sha-3/index.html">competition</a> has selected Keccak.  The full standard has not been released yet.  Once the full standard is released work will need to be done to permit it to be used with OpenPGP.</p>
+<h1 id="secure-hash-algorithms">Which Standard Crytographic Hash Algorithms Are Secure?<a class="headerlink" href="#secure-hash-algorithms" title="Permanent link">&para;</a></h1>
+<p>There is no good, simple answer to this question.</p>
+<p><a href="#infeasible">Feasible</a> - though expensive - attacks on MD5 have been made
+public. Similar weaknesses have been found in the SHA family of hashes
+though practical attacks are not yet publically known. However, longer hash
+sizes offer considerable protection. So, larger members of the SHA family
+still look likely to be secure enough for a number of years.</p>
+<p>RIPE has not been as well studied as either SHA or MD5. It is likely to
+offer no more security than SHA.</p>
+<p>SHA512 is the strongest well studied widely used cryptographic hash. It is
+therefore the best recommendation until <a href="#sha3">SHA3</a> is available.</p>
+<h1 id="generate">How Do You Generate A Code Signing Key?<a class="headerlink" href="#generate" title="Permanent link">&para;</a></h1>
+<p>The exact mechanics are <a href="#openpgp-applications">application</a> dependent. For
+GnuPG (recommended), follow the <a href="http://www.apache.org/dev/openpgp.html#generate-key">strong key generation
+instructions</a>. Please think about the <a href="#key-length">right key
+length</a> , configure the tool to <a href="#sha1">avoid SHA-1</a> and
+choose a good <a href="#passphrase">passphrase</a>. Use the recommended <a href="#user-id">id</a>
+and <a href="#key-comment">comment</a>.</p>
+<h1 id="user-id">What OpenPGP User-ID Should I Choose For My Code Signing Key?<a class="headerlink" href="#user-id" title="Permanent link">&para;</a></h1>
+<p>It is recommended that your Apache email address is used as the primary
+<code>User-ID</code> for the code signing key. For example, <code>rdonkin@apache.org</code>.</p>
+<h1 id="key-comment">What OpenPGP Comment Should I Choose For My Code Signing Key?<a class="headerlink" href="#key-comment" title="Permanent link">&para;</a></h1>
+<p>It is recommended that the comment includes <em>CODE SIGNING KEY</em>. This makes
+clear the primary use for this key. This can be helpful if you later
+generate keys for other uses.</p>
+<p>It is recommended that keys generated for other purposes include in the
+comment <em>NOT FOR CODE SIGNING</em>.</p>
+<h1 id="keyserver">What Is A Public Key Server?<a class="headerlink" href="#keyserver" title="Permanent link">&para;</a></h1>
+<p>A public key server manages <a href="#public-private">public keys</a>. Available
+functions may vary but typically include <a href="#keyserver-upload">upload</a> ,
+search and download.</p>
+<p>Public key servers exist to distribute public keys. They do not vouch for
+the actual identity of the owner of each key. This must be established
+either directly or through a <a href="#web-of-trust">web of trust</a>. Do not trust a
+key just because it has been downloaded from a key server.</p>
+<p>The major public key servers synchronize their records regularly so a key
+uploaded to one should be disseminated to the rest.</p>
+<p>Some well known public key servers:</p>
+<ul>
+<li>
+<p><a href="http://pgp.mit.edu/">MIT</a> </p>
+</li>
+<li>
+<p><a href="http://pgp.surfnet.nl/">SKS OpenPGP Public Key Server</a> </p>
+</li>
+</ul>
+<p>Although the following is also well-known, 
+at present it does not synchronise keys with other key servers,
+so should not be used as the only public server for your key:</p>
+<ul>
+<li><a href="http://keyserver.pgp.com/">PGP Global Directory</a> </li>
+</ul>
+<h1 id="keyserver-upload">How Do You Upload A Key To A Public Key Server?<a class="headerlink" href="#keyserver-upload" title="Permanent link">&para;</a></h1>
+<p>There are two common ways to upload a key to a <a href="#keyserver">public key
+server</a> :</p>
+<ul>
+<li>
+<p>Most key servers allow <a href="#export">exports</a> to be uploaded through the
+website</p>
+</li>
+<li>
+<p>By using automatic facilities built into most <a href="#openpgp">OpenPGP</a> 
+<a href="#openpgp-applications">implementations</a> </p>
+</li>
+</ul>
+<p>For example using <a href="http://www.gnupg.org/">GNU Privacy Guard</a> , the key with
+<a href="#key-id">ID</a> B1313DE2 can be exported to the default public key server by:
+<code><pre>
+$ gpg --send-key B13131DE2
+</pre></code>
+Note that each changed key must be exported separately.</p>
+<h1 id="update-web-of-trust">How Can I Ensure My Local Web Of Trust Is Up To Date?<a class="headerlink" href="#update-web-of-trust" title="Permanent link">&para;</a></h1>
+<p>The public web of trust grows constantly as people sign new keys and upload
+the new signatures onto the network of <a href="#keyserver">public key servers</a>.
+Public keys should be periodically refreshed to ensure that your local web
+of trust is as full as possible. Many <a href="#openpgp">OpenPGP</a> 
+<a href="#openpgp-applications">clients</a> allow keys to be easily refreshed by
+querying a public key server.</p>
+<p>For example, to refresh all keys using <a href="http://www.gnupg.org/">GNU Privacy
+Guard</a> use:
+<code><pre>
+$ gpg --refresh-keys
+</pre></code></p>
+<h1 id="export">How Do You Export A Key?<a class="headerlink" href="#export" title="Permanent link">&para;</a></h1>
+<p>A public key can be exported using <a href="http://www.gnupg.org/">OpenPGP</a> by using
+<code>--export</code>. Typically, the export should be ASCII armored. For example, to
+export all public keys to the command line use:
+<pre>
+gpg --export --armor
+</pre>
+In most cases, it is better to export all keys - this ensures that
+signatures made on other keys will be exported. However, it is possible to
+export just one key by specifying it on the command line.</p>
+<p>Secret keys can also be exported. However, exporting secret keys poses a
+security risk and there are better solutions for most common use cases. For
+example, copying the <code>GNUPGHOME</code> directory (typically <code>~/.gnupg</code> ) is a
+better way to transfer an <a href="http://www.gnupg.org/">OpenPGP</a> keyring from one
+machine to another.</p>
+<h1 id="key-id">What Is A Key ID?<a class="headerlink" href="#key-id" title="Permanent link">&para;</a></h1>
+<p>A key ID is similar to a <a href="#fingerprint">fingerprint</a> but is much smaller in
+length. There is no guarantee that key IDs are unique. Consequently, it is
+strongly recommended that the fingerprint is checked before signing a key.
+The key ID is typically used for locating keys and identifying keys already
+contained within the keyring. For these use cases, key ID should be unique
+enough in practice.</p>
+<p>A short guide to discovering the key ID for a key is
+<a href="http://www.apache.org/dev/openpgp.html#find-key-id">available</a>.</p>
+<h1 id="subkey">What Is A Sub Key?<a class="headerlink" href="#subkey" title="Permanent link">&para;</a></h1>
+<p>Each <a href="#openpgp">OpenPGP</a> keyring has a single master key. This key is
+signing only. It may also optionally have a number of sub keys (for
+encryption and signing).</p>
+<p>If you wish to sign emails using a key related to that used to sign code,
+it is recommended that a signing sub key is <a href="#email-subkey">used</a>.</p>
+<h1 id="email-subkey">How Do I A Use Sub Key To Sign Emails?<a class="headerlink" href="#email-subkey" title="Permanent link">&para;</a></h1>
+<p>To keep a code signing key <a href="#safe-and-secure">safe and secure</a> it is
+recommended that the key is not kept on a hard disc on a regular
+development machine. This means that the master key should not be used
+directly to sign emails. However, there are occasions when digitally signed
+emails are desirable.</p>
+<p>The recommended approach is to create a sub key for email signing and
+export it to the regular machine. The master key can then be kept safely
+offline. For more details, read:</p>
+<ul>
+<li>
+<p><a href="http://www.gnupg.org/(en)/faq/subkey-cross-certify.html">Subkey cross
+certification</a> </p>
+</li>
+<li>
+<p><a href="http://fortytwo.ch/gpg/subkeys">Signing Subkey HOWTO</a> </p>
+</li>
+</ul>
+<p>Note that some <a href="#keyserver">public key servers</a> do not handle sub keys
+correctly. It may be necessary to use one on the
+<a href="http://www.nongnu.org/sks/">SKS</a> network.</p>
+<h1 id="more-information">How Can I Find Out More?<a class="headerlink" href="#more-information" title="Permanent link">&para;</a></h1>
+<p>See <a href="#reading">this</a>.</p>
+<h1 id="quick-signing">Is There A Quick Way To Sign Several Distributions?<a class="headerlink" href="#quick-signing" title="Permanent link">&para;</a></h1>
+<p>The private <code>https://svn.apache.org/repos/private/committers</code> repository
+contains scripts that assist with batch signing several distributions.</p>
+<h1 id="transfer-secret-keys">How Can I Transfer A Secret Key?<a class="headerlink" href="#transfer-secret-keys" title="Permanent link">&para;</a></h1>
+<p>This is application dependent. Instructions for GnuPG are
+<a href="http://www.apache.org/dev/openpgp.html#secret-key-transfer">available</a>.</p>
+<h1 id="two-keys">Why Do Some People Have Two Keys?<a class="headerlink" href="#two-keys" title="Permanent link">&para;</a></h1>
+<p>When switching from an uncompromised key to another (typically stronger)
+one, it is convenient to use a <a href="#transition">transition period</a>. During a
+transition, both keys are trustworthy but only (the newer) one is actively
+used to sign documents and certify links in the <a href="#web-of-trust">web of
+trust</a>.</p>
+<h1 id="transition">What Is A Transition Period (For Keys)?<a class="headerlink" href="#transition" title="Permanent link">&para;</a></h1>
+<p>When replacing one uncompromised key with a newer (typically longer) one, a
+transition period where both keys are trustworthy and participate in the
+<a href="#web-of-trust">web of trust</a> allows - by <a href="#web-of-trust">trust
+transitivity</a> - links to the old key to be used to trust
+signatures and links created by the new key. During a transition, both keys
+are trustworthy but only (the newer) one is actively used to sign documents
+and certify links in the <a href="#web-of-trust">web of trust</a>.</p>
+<h1 id="how-to-transition">How Should I Transition From A Short To A Longer Key?<a class="headerlink" href="#how-to-transition" title="Permanent link">&para;</a></h1>
+<p>If you have a short but uncompromised key and would like to
+<a href="#transition">transition</a> to a longer one, follow these
+<a href="http://www.apache.org/dev/key-transition.html">instructions</a>.</p>
+<p>If your key has been compromised then you <strong>MUST NOT</strong> transition but
+<a href="#revoke-key">revoke</a> the old key and replace with a new one immediately.
+<strong>DO NOT</strong> use a transition period.</p>
+<h1 id="update-document">I Have A New Key. Which Apache Documents Need To Be Updated?<a class="headerlink" href="#update-document" title="Permanent link">&para;</a></h1>
+<p>A number of Apache documents need to be updated. Follow these
+<a href="http://www.apache.org/dev/openpgp.html#update">instructions</a>.</p>
+<h1 id="rsa">What Is RSA?<a class="headerlink" href="#rsa" title="Permanent link">&para;</a></h1>
+<p>RSA is a well known public key cryptography algorithm which supports
+signing and encryption.</p>
+<p>See <a href="#reading">further reading</a> for more details.</p>
+<h1 id="key-length-how-to">How Do I Find The Length Of A Key?<a class="headerlink" href="#key-length-how-to" title="Permanent link">&para;</a></h1>
+<p>The easiest way to discover the length of a key (with id <code>KEYID</code> ) is to
+use <code>gpg --list-keys KEYID</code>. This will print basic information about the
+key. The first line will include the size in the second column just before
+the id.</p>
+<p>For example:
+<pre>
+$ gpg --list-keys B1313DE2
+pub   1024D/B1313DE2 2003-01-15
+uid                  Robert Burrell Donkin (CODE SIGNING KEY) &lt;rdonkin@apache.org&gt;
+uid                  Robert Burrell Donkin &lt;robertburrelldonkin@gmail.com&gt;
+uid                  Robert Burrell Donkin &lt;robertburrelldonkin@blueyonder.co.uk&gt;
+sub   4096R/40A882CB 2009-06-18 [expires: 2010-06-18]</p>
+<p>$ gpg --list-keys A6EE6908
+pub   8192R/A6EE6908 2009-08-07
+uid                  Robert Burrell Donkin (CODE SIGNING KEY) &lt;rdonkin@apache.org&gt;
+sub   8192R/B800EFC1 2009-08-07
+</pre>
+shows that key B1313DE2 has length 1024 and A6EE6908 length 8192.</p></div>
+
+  <!-- Footer -->
+  
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-2">
+          <h5 class="white">Community</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://community.apache.org/">Overview</a></li>
+            <li><a href="http://www.apache.org/foundation/conferences.html">Conferences</a></li>
+            <li><a href="http://community.apache.org/gsoc.html">Summer of Code</a></li>
+            <li><a href="http://community.apache.org/newcomers/">Getting Started</a></li>
+            <li><a href="http://www.apache.org/foundation/how-it-works.html">The Apache Way</a></li>
+            <li><a href="http://www.apache.org/travel/">Travel Assistance</a></li>
+            <li><a href="http://www.apache.org/foundation/getinvolved.html">Get Involved</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct.html">Code of Conduct</a></li>
+            <li><a href="http://community.apache.org/newbiefaq.html">Community FAQ</a></li>
+            <li><a href="http://www.apache.org/memorials/">Memorials</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Innovation</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://incubator.apache.org/">Incubator</a></li>
+            <li><a href="http://labs.apache.org/">Labs</a></li>
+            <li><a href="http://www.apache.org/licenses/">Licensing</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Tech Operations</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/dev/">Developer Information</a></li>
+            <li><a href="http://www.apache.org/dev/infrastructure.html">Infrastructure</a></li>
+            <li><a href="http://www.apache.org/security/">Security</a></li>
+            <li><a href="http://status.apache.org/">Status</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Press</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/press/">Overview</a></li>
+            <li><a href="https://blogs.apache.org/">ASF News</a></li>
+            <li><a href="https://blogs.apache.org/foundation/">Announcements</a></li>
+            <li><a href="https://twitter.com/TheASF">Twitter Feed</a></li>
+            <li><a href="http://www.apache.org/press/#contact">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Legal</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/legal/">Legal Affairs</a></li>
+            <li><a href="http://www.apache.org/legal/dmca.html">DMCA</a></li>
+            <li><a href="http://www.apache.org/licenses/">Licensing</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="http://www.apache.org/foundation/records/">Public Records</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/privacy.html">Privacy Policy</a></li>
+            <li><a href="http://www.apache.org/licenses/exports/">Export Information</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+
+      </div>
+      <hr class="col-lg-12 hr-white" />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Copyright &#169; 2019 The Apache Software Foundation, Licensed under the <a class="white" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+          <p class="text-center">Apache and the Apache feather logo are trademarks of The Apache Software Foundation. </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- / Footer -->
+
+  <script src="http://www.apache.org/js/jquery-2.1.1.min.js"></script>
+  <script src="http://www.apache.org/js/bootstrap.js"></script>
+  <script>
+    (function($){
+    $(document).ready(function(){
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).parent().siblings().removeClass('open');
+    $(this).parent().toggleClass('open');
+    console.log('WOrked');
+    });
+    });
+    })(jQuery);
+  </script>
+</body>
+
+<!-- Mirrored from www.apache.org/dev/release-signing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+</html>

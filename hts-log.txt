@@ -1,0 +1,690 @@
+HTTrack3.49-2 launched on Mon, 10 Jun 2019 12:49:49 at http://www.apache.org
+(httrack http://www.apache.org -O /home/ayadav/Documents/temp_1 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:49:50	Warning: 	Note: due to www.apache.org remote robots.txt rules, links beginning with these path will be forbidden: /websrc (see in the options to disable this)
+13:00:47	Error: 	"Not Found" (404) at link www.apache.org/img/incubator.jpg (from www.apache.org/)
+13:00:48	Error: 	"Not Found" (404) at link www.apache.org/logos/res/sdap/default.png (from www.apache.org/)
+13:19:47	Warning: 	File not parsed, looks like binary: www.apache.org/fonts/glyphicons-halflings-regular.woff2
+13:19:59	Warning: 	Note: due to https://www.apache.org remote robots.txt rules, links beginning with these path will be forbidden: /websrc (see in the options to disable this)
+13:22:19	Error: 	"Not Found" (404) at link www.apache.org/foundation/license-FAQ.html (from www.apache.org/foundation/preFAQ.html)
+13:28:25	Error: 	"Not Found" (404) at link www.apache.org/foundation/foundation/marks/ (from www.apache.org/foundation/license-faq.html)
+14:35:11	Warning: 	file not stored in cache due to bogus state (broken size, expected 20144692 got 3309724): www.apache.org/dist/chukwa/chukwa-src-0.8.0.tar.gz
+15:03:26	Error: 	Exit requested by shell or user
+15:03:27	Error: 	"Not Found" (404) at link www.apache.org/foundation/press/kit/poweredBy/Apache_PoweredBy.png (from www.apache.org/foundation/press/kit/)
+15:03:27	Error: 	"Not Found" (404) at link www.apache.org/foundation/press/kit/poweredBy/Apache_PoweredBy.pdf (from www.apache.org/foundation/press/kit/)
+15:03:27	Error: 	"Not Found" (404) at link www.apache.org/foundation/press/kit/poweredBy/Apache_PoweredBy.svg (from www.apache.org/foundation/press/kit/)
+15:03:27	Error: 	"Not Found" (404) at link www.apache.org/foundation/press/kit/poweredBy/Apache_PoweredBy.emf (from www.apache.org/foundation/press/kit/)
+15:03:31	Error: 	"Not Found" (404) at link www.apache.org/dev/mail-archives.apache.org/mod_mbox/httpd-dev/201210.mbox (from www.apache.org/dev/)
+15:03:31	Warning: 	Moved Permanently for www.apache.org/mail/
+15:03:31	Warning: 	File has moved from www.apache.org/mail/ to http://mail-archives.apache.org/mod_mbox/#asf-wide
+15:03:31	Warning: 	Moved Permanently for www.apache.org/dist/lucene/nutch/
+15:03:31	Warning: 	File has moved from www.apache.org/dist/lucene/nutch/ to http://www.apache.org/dyn/closer.cgi/nutch
+15:03:31	Warning: 	Moved Permanently for www.apache.org/dist/lucene/tika/
+15:03:31	Warning: 	File has moved from www.apache.org/dist/lucene/tika/ to http://www.apache.org/dyn/closer.cgi/tika
+15:03:31	Error: 	"Not Found" (404) at link www.apache.org/licenses/exports/www.bouncycastle.org/download/bcprov-jdk15on-156.tar.gz (from www.apache.org/licenses/exports/)
+15:03:31	Error: 	"Not Found" (404) at link www.apache.org/licenses/exports/www.bouncycastle.org/download/bcprov-jdk15on-152.tar.gz (from www.apache.org/licenses/exports/)
+15:03:31	Error: 	"Not Found" (404) at link www.apache.org/dist/incubator/shiro (from www.apache.org/licenses/exports/)
+15:03:31	Error: 	"Not Found" (404) at link www.apache.org/licenses/exports/www.bouncycastle.org/download/bcprov-jdk15on-151.tar.gz (from www.apache.org/licenses/exports/)
+15:03:31	Warning: 	Moved Permanently for www.apache.org/mail/announce/
+15:03:31	Warning: 	File has moved from www.apache.org/mail/announce/ to http://mail-archives.apache.org/mod_mbox/asf-wide-announce/
+15:03:31	Warning: 	Moved Permanently for www.apache.org/mail/legal-discuss/
+15:03:31	Warning: 	File has moved from www.apache.org/mail/legal-discuss/ to http://mail-archives.apache.org/mod_mbox/asf-wide-legal-discuss/
+15:03:31	Error: 	"Not Found" (404) at link www.apache.org/foundation/licensing.html (from www.apache.org/licenses/cla-faq.html)
+15:03:31	Warning: 	Retry after error -2 (Receive Time Out) at link www.apache.org/dist/aries/org.apache.aries.spifly.static.tool-1.2.1-jar-with-dependencies.jar (from www.apache.org/dist/aries/)
+15:03:31	Warning: 	Moved Permanently for www.apache.org/dist/aurora/debian/
+15:03:31	Warning: 	File has moved from www.apache.org/dist/aurora/debian/ to http://dl.bintray.com/apache/aurora/
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/avro/stable/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/avro/stable/ (from www.apache.org/dist/avro/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/avro/?C=N;O=D
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/avro/?C=N;O=D (from www.apache.org/dist/avro/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/avro/?C=M;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/avro/?C=M;O=A (from www.apache.org/dist/avro/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/avro/?C=S;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/avro/?C=S;O=A (from www.apache.org/dist/avro/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/avro/?C=D;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/avro/?C=D;O=A (from www.apache.org/dist/avro/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/avro/avro-1.9.0/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/avro/avro-1.9.0/ (from www.apache.org/dist/avro/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/axis/?C=N;O=D
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/axis/?C=N;O=D (from www.apache.org/dist/axis/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/axis/?C=M;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/axis/?C=M;O=A (from www.apache.org/dist/axis/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/axis/?C=S;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/axis/?C=S;O=A (from www.apache.org/dist/axis/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/axis/?C=D;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/axis/?C=D;O=A (from www.apache.org/dist/axis/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/axis/axis/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/axis/axis/ (from www.apache.org/dist/axis/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/axis/axis2/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/axis/axis2/ (from www.apache.org/dist/axis/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bahir/?C=N;O=D
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bahir/?C=N;O=D (from www.apache.org/dist/bahir/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bahir/?C=M;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bahir/?C=M;O=A (from www.apache.org/dist/bahir/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bahir/?C=S;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bahir/?C=S;O=A (from www.apache.org/dist/bahir/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bahir/?C=D;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bahir/?C=D;O=A (from www.apache.org/dist/bahir/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bahir/bahir-flink/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bahir/bahir-flink/ (from www.apache.org/dist/bahir/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bahir/bahir-spark/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bahir/bahir-spark/ (from www.apache.org/dist/bahir/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/?C=N;O=D
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/?C=N;O=D (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/?C=M;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/?C=M;O=A (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/?C=S;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/?C=S;O=A (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/?C=D;O=A
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/?C=D;O=A (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/2.10.0/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/2.10.0/ (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/2.11.0/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/2.11.0/ (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/2.12.0/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/2.12.0/ (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/2.13.0/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/2.13.0/ (from www.apache.org/dist/beam/)
+15:03:31	Warning: 	File not added due to mirror cancel: www.apache.org/dist/beam/latest/
+15:03:31	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/beam/latest/ (from www.apache.org/dist/beam/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bigtop/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bigtop/?C=N;O=D (from www.apache.org/dist/bigtop/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bigtop/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bigtop/?C=M;O=A (from www.apache.org/dist/bigtop/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bigtop/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bigtop/?C=S;O=A (from www.apache.org/dist/bigtop/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bigtop/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bigtop/?C=D;O=A (from www.apache.org/dist/bigtop/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bigtop/bigtop-1.3.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bigtop/bigtop-1.3.0/ (from www.apache.org/dist/bigtop/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bigtop/stable/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bigtop/stable/ (from www.apache.org/dist/bigtop/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bloodhound/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bloodhound/?C=N;O=D (from www.apache.org/dist/bloodhound/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bloodhound/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bloodhound/?C=M;O=A (from www.apache.org/dist/bloodhound/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bloodhound/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bloodhound/?C=S;O=A (from www.apache.org/dist/bloodhound/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bloodhound/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bloodhound/?C=D;O=A (from www.apache.org/dist/bloodhound/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/?C=N;O=D (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/?C=M;O=A (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/?C=S;O=A (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/?C=D;O=A (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/bookkeeper-4.7.3/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/bookkeeper-4.7.3/ (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/bookkeeper-4.8.2/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/bookkeeper-4.8.2/ (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/bookkeeper-4.9.1/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/bookkeeper-4.9.1/ (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/bookkeeper-4.9.2/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/bookkeeper-4.9.2/ (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bookkeeper/distributedlog/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bookkeeper/distributedlog/ (from www.apache.org/dist/bookkeeper/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/brooklyn/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/brooklyn/?C=N;O=D (from www.apache.org/dist/brooklyn/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/brooklyn/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/brooklyn/?C=M;O=A (from www.apache.org/dist/brooklyn/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/brooklyn/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/brooklyn/?C=S;O=A (from www.apache.org/dist/brooklyn/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/brooklyn/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/brooklyn/?C=D;O=A (from www.apache.org/dist/brooklyn/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/brooklyn/apache-brooklyn-0.12.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/brooklyn/apache-brooklyn-0.12.0/ (from www.apache.org/dist/brooklyn/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/brooklyn/apache-brooklyn-1.0.0-M1/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/brooklyn/apache-brooklyn-1.0.0-M1/ (from www.apache.org/dist/brooklyn/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/buildr/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/buildr/?C=N;O=D (from www.apache.org/dist/buildr/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/buildr/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/buildr/?C=M;O=A (from www.apache.org/dist/buildr/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/buildr/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/buildr/?C=S;O=A (from www.apache.org/dist/buildr/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/buildr/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/buildr/?C=D;O=A (from www.apache.org/dist/buildr/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/buildr/1.4.23/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/buildr/1.4.23/ (from www.apache.org/dist/buildr/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bval/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bval/?C=N;O=D (from www.apache.org/dist/bval/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bval/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bval/?C=M;O=A (from www.apache.org/dist/bval/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bval/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bval/?C=S;O=A (from www.apache.org/dist/bval/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bval/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bval/?C=D;O=A (from www.apache.org/dist/bval/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bval/0.5/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bval/0.5/ (from www.apache.org/dist/bval/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bval/1.1.2/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bval/1.1.2/ (from www.apache.org/dist/bval/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/bval/2.0.2/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/bval/2.0.2/ (from www.apache.org/dist/bval/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/?C=N;O=D (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/?C=M;O=A (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/?C=S;O=A (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/?C=D;O=A (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/apache-calcite-1.18.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/apache-calcite-1.18.0/ (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/apache-calcite-1.19.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/apache-calcite-1.19.0/ (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/apache-calcite-avatica-1.14.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/apache-calcite-avatica-1.14.0/ (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/apache-calcite-avatica-1.15.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/apache-calcite-avatica-1.15.0/ (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/apache-calcite-avatica-go-3.2.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/apache-calcite-avatica-go-3.2.0/ (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/calcite/apache-calcite-avatica-go-4.0.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/calcite/apache-calcite-avatica-go-4.0.0/ (from www.apache.org/dist/calcite/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/camel/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/camel/?C=N;O=D (from www.apache.org/dist/camel/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/camel/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/camel/?C=M;O=A (from www.apache.org/dist/camel/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/camel/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/camel/?C=S;O=A (from www.apache.org/dist/camel/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/camel/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/camel/?C=D;O=A (from www.apache.org/dist/camel/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/camel/apache-camel/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/camel/apache-camel/ (from www.apache.org/dist/camel/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/?C=N;O=D (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/?C=M;O=A (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/?C=S;O=A (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/?C=D;O=A (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/1.4.1/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/1.4.1/ (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/1.5.0/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/1.5.0/ (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/1.5.1/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/1.5.1/ (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/1.5.2/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/1.5.2/ (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/1.5.3/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/1.5.3/ (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/carbondata/1.5.4/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/carbondata/1.5.4/ (from www.apache.org/dist/carbondata/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/?C=N;O=D (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/?C=M;O=A (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/?C=S;O=A (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/?C=D;O=A (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/2.1.21/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/2.1.21/ (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/2.2.14/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/2.2.14/ (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/3.0.18/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/3.0.18/ (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/3.11.4/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/3.11.4/ (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/debian/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/debian/ (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cassandra/redhat/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cassandra/redhat/ (from www.apache.org/dist/cassandra/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cayenne/?C=N;O=D
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cayenne/?C=N;O=D (from www.apache.org/dist/cayenne/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cayenne/?C=M;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cayenne/?C=M;O=A (from www.apache.org/dist/cayenne/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cayenne/?C=S;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cayenne/?C=S;O=A (from www.apache.org/dist/cayenne/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cayenne/?C=D;O=A
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cayenne/?C=D;O=A (from www.apache.org/dist/cayenne/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cayenne/3.1.3/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cayenne/3.1.3/ (from www.apache.org/dist/cayenne/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cayenne/4.0.1/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cayenne/4.0.1/ (from www.apache.org/dist/cayenne/)
+15:03:32	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cayenne/4.1.B2/
+15:03:32	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cayenne/4.1.B2/ (from www.apache.org/dist/cayenne/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/celix/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/celix/?C=N;O=D (from www.apache.org/dist/celix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/celix/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/celix/?C=M;O=A (from www.apache.org/dist/celix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/celix/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/celix/?C=S;O=A (from www.apache.org/dist/celix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/celix/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/celix/?C=D;O=A (from www.apache.org/dist/celix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/celix/celix-2.1.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/celix/celix-2.1.0/ (from www.apache.org/dist/celix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/?C=N;O=D (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/?C=M;O=A (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/?C=S;O=A (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/?C=D;O=A (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/cmislib/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/cmislib/ (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/dotcmis/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/dotcmis/ (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/objectivecmis/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/objectivecmis/ (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/opencmis/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/opencmis/ (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chemistry/portcmis/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chemistry/portcmis/ (from www.apache.org/dist/chemistry/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chukwa/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chukwa/?C=N;O=D (from www.apache.org/dist/chukwa/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chukwa/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chukwa/?C=M;O=A (from www.apache.org/dist/chukwa/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chukwa/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chukwa/?C=S;O=A (from www.apache.org/dist/chukwa/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chukwa/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chukwa/?C=D;O=A (from www.apache.org/dist/chukwa/)
+15:07:53	Warning: 	Retry after error -4 (Incorrect length (3309724 Bytes, 20144692 expected)) at link www.apache.org/dist/chukwa/chukwa-src-0.8.0.tar.gz (from www.apache.org/dist/chukwa/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/?C=N;O=D (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/?C=M;O=A (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/?C=S;O=A (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/?C=D;O=A (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/jaxrs.utils-0.7/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/jaxrs.utils-0.7/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/parent-6/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/parent-6/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/partial-release-20130710/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/partial-release-20130710/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/partial-release-201407/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/partial-release-201407/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/partial-release-201505/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/partial-release-201505/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/partial-release-201508/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/partial-release-201508/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/partial-release-201604/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/partial-release-201604/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/rdf-core-0.1/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/rdf-core-0.1/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/rdf-core-0.2/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/rdf-core-0.2/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/rdfjson-1.0.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/rdfjson-1.0.0/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/clerezza/typehandlerspace-02/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/clerezza/typehandlerspace-02/ (from www.apache.org/dist/clerezza/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/climate/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/climate/?C=N;O=D (from www.apache.org/dist/climate/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/climate/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/climate/?C=M;O=A (from www.apache.org/dist/climate/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/climate/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/climate/?C=S;O=A (from www.apache.org/dist/climate/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/climate/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/climate/?C=D;O=A (from www.apache.org/dist/climate/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/climate/1.3.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/climate/1.3.0/ (from www.apache.org/dist/climate/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cloudstack/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cloudstack/?C=N;O=D (from www.apache.org/dist/cloudstack/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cloudstack/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cloudstack/?C=M;O=A (from www.apache.org/dist/cloudstack/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cloudstack/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cloudstack/?C=S;O=A (from www.apache.org/dist/cloudstack/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cloudstack/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cloudstack/?C=D;O=A (from www.apache.org/dist/cloudstack/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cloudstack/releases/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cloudstack/releases/ (from www.apache.org/dist/cloudstack/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/?C=N;O=D (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/?C=M;O=A (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/?C=S;O=A (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/?C=D;O=A (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/2.1/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/2.1/ (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/2.2/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/2.2/ (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/3.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/3.0/ (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/events/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/events/ (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/images/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/images/ (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/styles/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/styles/ (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cocoon/subprojects/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cocoon/subprojects/ (from www.apache.org/dist/cocoon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/?C=N;O=D (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/?C=M;O=A (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/?C=S;O=A (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/?C=D;O=A (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/bcel/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/bcel/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/beanutils/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/beanutils/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/bsf/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/bsf/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/chain/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/chain/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/cli/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/cli/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/codec/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/codec/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/collections/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/collections/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/commons-build-plugin/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/commons-build-plugin/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/commons-parent/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/commons-parent/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/commons-release-plugin/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/commons-release-plugin/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/compress/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/compress/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/configuration/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/configuration/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/csv/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/csv/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/daemon/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/daemon/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/dbcp/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/dbcp/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/dbutils/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/dbutils/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/digester/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/digester/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/email/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/email/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/exec/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/exec/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/fileupload/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/fileupload/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/httpclient/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/httpclient/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/imaging/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/imaging/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/io/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/io/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/jci/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/jci/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/jcs/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/jcs/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/jelly/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/jelly/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/jexl/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/jexl/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/jxpath/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/jxpath/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/lang/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/lang/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/logging/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/logging/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/math/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/math/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/net/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/net/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/pool/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/pool/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/proxy/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/proxy/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/rdf/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/rdf/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/rng/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/rng/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/sanselan/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/sanselan/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/scxml/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/scxml/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/text/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/text/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/validator/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/validator/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/vfs/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/vfs/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/commons/weaver/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/commons/weaver/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: https://www.apache.org/dyn/closer.cgi/commons/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link https://www.apache.org/dyn/closer.cgi/commons/ (from www.apache.org/dist/commons/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/?C=N;O=D (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/?C=M;O=A (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/?C=S;O=A (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/?C=D;O=A (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/platforms/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/platforms/ (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/plugins/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/plugins/ (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/templates/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/templates/ (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cordova/tools/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cordova/tools/ (from www.apache.org/dist/cordova/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/couchdb/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/couchdb/?C=N;O=D (from www.apache.org/dist/couchdb/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/couchdb/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/couchdb/?C=M;O=A (from www.apache.org/dist/couchdb/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/couchdb/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/couchdb/?C=S;O=A (from www.apache.org/dist/couchdb/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/couchdb/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/couchdb/?C=D;O=A (from www.apache.org/dist/couchdb/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/couchdb/binary/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/couchdb/binary/ (from www.apache.org/dist/couchdb/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/couchdb/notes/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/couchdb/notes/ (from www.apache.org/dist/couchdb/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/couchdb/source/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/couchdb/source/ (from www.apache.org/dist/couchdb/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/creadur/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/creadur/?C=N;O=D (from www.apache.org/dist/creadur/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/creadur/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/creadur/?C=M;O=A (from www.apache.org/dist/creadur/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/creadur/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/creadur/?C=S;O=A (from www.apache.org/dist/creadur/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/creadur/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/creadur/?C=D;O=A (from www.apache.org/dist/creadur/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/creadur/apache-rat-0.13/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/creadur/apache-rat-0.13/ (from www.apache.org/dist/creadur/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/crunch/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/crunch/?C=N;O=D (from www.apache.org/dist/crunch/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/crunch/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/crunch/?C=M;O=A (from www.apache.org/dist/crunch/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/crunch/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/crunch/?C=S;O=A (from www.apache.org/dist/crunch/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/crunch/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/crunch/?C=D;O=A (from www.apache.org/dist/crunch/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/crunch/crunch-0.14.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/crunch/crunch-0.14.0/ (from www.apache.org/dist/crunch/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/crunch/crunch-0.15.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/crunch/crunch-0.15.0/ (from www.apache.org/dist/crunch/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/ctakes/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/ctakes/?C=N;O=D (from www.apache.org/dist/ctakes/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/ctakes/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/ctakes/?C=M;O=A (from www.apache.org/dist/ctakes/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/ctakes/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/ctakes/?C=S;O=A (from www.apache.org/dist/ctakes/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/ctakes/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/ctakes/?C=D;O=A (from www.apache.org/dist/ctakes/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/ctakes/ctakes-3.2.2/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/ctakes/ctakes-3.2.2/ (from www.apache.org/dist/ctakes/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/ctakes/ctakes-4.0.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/ctakes/ctakes-4.0.0/ (from www.apache.org/dist/ctakes/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/curator/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/curator/?C=N;O=D (from www.apache.org/dist/curator/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/curator/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/curator/?C=M;O=A (from www.apache.org/dist/curator/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/curator/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/curator/?C=S;O=A (from www.apache.org/dist/curator/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/curator/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/curator/?C=D;O=A (from www.apache.org/dist/curator/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/curator/2.13.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/curator/2.13.0/ (from www.apache.org/dist/curator/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/curator/4.2.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/curator/4.2.0/ (from www.apache.org/dist/curator/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/?C=N;O=D (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/?C=M;O=A (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/?C=S;O=A (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/?C=D;O=A (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/3.0.16/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/3.0.16/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/3.1.18/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/3.1.18/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/3.2.8/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/3.2.8/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/3.2.9/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/3.2.9/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/3.3.1/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/3.3.1/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/3.3.2/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/3.3.2/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/dosgi/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/dosgi/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/cxf/fediz/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/cxf/fediz/ (from www.apache.org/dist/cxf/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/datafu/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/datafu/?C=N;O=D (from www.apache.org/dist/datafu/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/datafu/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/datafu/?C=M;O=A (from www.apache.org/dist/datafu/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/datafu/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/datafu/?C=S;O=A (from www.apache.org/dist/datafu/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/datafu/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/datafu/?C=D;O=A (from www.apache.org/dist/datafu/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/datafu/apache-datafu-1.4.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/datafu/apache-datafu-1.4.0/ (from www.apache.org/dist/datafu/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/datafu/apache-datafu-1.5.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/datafu/apache-datafu-1.5.0/ (from www.apache.org/dist/datafu/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/?C=N;O=D (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/?C=M;O=A (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/?C=S;O=A (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/?C=D;O=A (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/ddlutils/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/ddlutils/ (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/derby/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/derby/ (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/jdo/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/jdo/ (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/db/torque/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/db/torque/ (from www.apache.org/dist/db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/deltaspike/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/deltaspike/?C=N;O=D (from www.apache.org/dist/deltaspike/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/deltaspike/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/deltaspike/?C=M;O=A (from www.apache.org/dist/deltaspike/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/deltaspike/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/deltaspike/?C=S;O=A (from www.apache.org/dist/deltaspike/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/deltaspike/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/deltaspike/?C=D;O=A (from www.apache.org/dist/deltaspike/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/deltaspike/1.8.2/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/deltaspike/1.8.2/ (from www.apache.org/dist/deltaspike/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/?C=N;O=D (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/?C=M;O=A (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/?C=S;O=A (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/?C=D;O=A (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/apacheds/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/apacheds/ (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/api/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/api/ (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/fortress/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/fortress/ (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/jdbm/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/jdbm/ (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/kerby/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/kerby/ (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/mavibot/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/mavibot/ (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/directory/studio/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/directory/studio/ (from www.apache.org/dist/directory/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/drill/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/drill/?C=N;O=D (from www.apache.org/dist/drill/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/drill/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/drill/?C=M;O=A (from www.apache.org/dist/drill/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/drill/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/drill/?C=S;O=A (from www.apache.org/dist/drill/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/drill/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/drill/?C=D;O=A (from www.apache.org/dist/drill/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/drill/drill-1.15.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/drill/drill-1.15.0/ (from www.apache.org/dist/drill/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/drill/drill-1.16.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/drill/drill-1.16.0/ (from www.apache.org/dist/drill/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/dubbo/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/dubbo/?C=N;O=D (from www.apache.org/dist/dubbo/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/dubbo/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/dubbo/?C=M;O=A (from www.apache.org/dist/dubbo/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/dubbo/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/dubbo/?C=S;O=A (from www.apache.org/dist/dubbo/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/dubbo/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/dubbo/?C=D;O=A (from www.apache.org/dist/dubbo/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/dubbo/2.7.2/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/dubbo/2.7.2/ (from www.apache.org/dist/dubbo/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/eagle/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/eagle/?C=N;O=D (from www.apache.org/dist/eagle/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/eagle/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/eagle/?C=M;O=A (from www.apache.org/dist/eagle/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/eagle/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/eagle/?C=S;O=A (from www.apache.org/dist/eagle/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/eagle/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/eagle/?C=D;O=A (from www.apache.org/dist/eagle/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/eagle/apache-eagle-0.3.0-incubating/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/eagle/apache-eagle-0.3.0-incubating/ (from www.apache.org/dist/eagle/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/eagle/apache-eagle-0.4.0-incubating/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/eagle/apache-eagle-0.4.0-incubating/ (from www.apache.org/dist/eagle/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/eagle/apache-eagle-0.5.0/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/eagle/apache-eagle-0.5.0/ (from www.apache.org/dist/eagle/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/empire-db/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/empire-db/?C=N;O=D (from www.apache.org/dist/empire-db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/empire-db/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/empire-db/?C=M;O=A (from www.apache.org/dist/empire-db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/empire-db/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/empire-db/?C=S;O=A (from www.apache.org/dist/empire-db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/empire-db/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/empire-db/?C=D;O=A (from www.apache.org/dist/empire-db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/empire-db/2.4.7/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/empire-db/2.4.7/ (from www.apache.org/dist/empire-db/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/falcon/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/falcon/?C=N;O=D (from www.apache.org/dist/falcon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/falcon/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/falcon/?C=M;O=A (from www.apache.org/dist/falcon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/falcon/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/falcon/?C=S;O=A (from www.apache.org/dist/falcon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/falcon/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/falcon/?C=D;O=A (from www.apache.org/dist/falcon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/falcon/0.11/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/falcon/0.11/ (from www.apache.org/dist/falcon/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/felix/?C=N;O=D
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/felix/?C=N;O=D (from www.apache.org/dist/felix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/felix/?C=M;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/felix/?C=M;O=A (from www.apache.org/dist/felix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/felix/?C=S;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/felix/?C=S;O=A (from www.apache.org/dist/felix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/felix/?C=D;O=A
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/felix/?C=D;O=A (from www.apache.org/dist/felix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/felix/images/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/felix/images/ (from www.apache.org/dist/felix/)
+15:07:53	Warning: 	File not added due to mirror cancel: www.apache.org/dist/felix/styles/
+15:07:53	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/felix/styles/ (from www.apache.org/dist/felix/)
+15:09:41	Warning: 	File not added due to mirror cancel: www.apache.org/dist/aries/org.apache.aries.spifly.static.tool-1.2.1-jar-with-dependencies.jar
+15:09:41	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/aries/org.apache.aries.spifly.static.tool-1.2.1-jar-with-dependencies.jar (from www.apache.org/dist/aries/)
+15:09:41	Warning: 	File not added due to mirror cancel: www.apache.org/dist/chukwa/chukwa-src-0.8.0.tar.gz
+15:09:41	Error: 	"mirror stopped by user" (-1) at link www.apache.org/dist/chukwa/chukwa-src-0.8.0.tar.gz (from www.apache.org/dist/chukwa/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 hours 19 minutes 52 seconds : 1791 links scanned, 1444 files written (252213187 bytes overall) [249666737 bytes received at 29750 bytes/sec], 11190025 bytes transferred using HTTP compression in 824 files, ratio 21%, 10.7 requests per connection
+(338 errors, 341 warnings, 0 messages)

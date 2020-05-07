@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.apache.org/dev/release-publishing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of The Apache Software Foundation">
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="http://www.apache.org/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://www.apache.org/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.apache.org/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://www.apache.org/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.apache.org/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://www.apache.org/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://www.apache.org/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://www.apache.org/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://www.apache.org/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://www.apache.org/favicons/manifest.json">
+  <link rel="shortcut icon" href="http://www.apache.org/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="http://www.apache.org/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="http://www.apache.org/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Publishing Releases</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+  <link href="http://www.apache.org/css/min.bootstrap.css" rel="stylesheet">
+  <link href="http://www.apache.org/css/styles.css" rel="stylesheet">
+  
+
+  <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at . http://www.apache.org/licenses/LICENSE-2.0 . Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. -->
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav-collapse">
+          <ul class="nav navbar-nav navbar-justified">
+            <li>
+              <form class="visible-xs">
+                <div class="input-group" style="width: 100%;">
+                  <script>
+                    (function() {
+                    var cx = '005703438322411770421:5mgshgrgx2u';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:searchbox-only></gcse:searchbox-only>
+                </div>
+              </form>
+            </li>
+            <li><a href="http://www.apache.org/index.html#news">News</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/foundation">Overview</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">Process</a></li>
+                <li><a href="http://www.apache.org/foundation/governance/">Governance</a></li>
+                <li><a href="http://www.apache.org/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="http://www.apache.org/foundation/governance/members.html">Membership</a></li>
+                <li><a href="https://community.apache.org/">Community</a></li>
+                <li><a href="http://www.apache.org/foundation/glossary.html">Glossary</a></li>
+                <li><a href="http://www.apache.org/foundation/preFAQ.html">FAQ</a></li>
+                <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html">Support Apache</a></li>
+                <li><a href="http://www.apache.org/press/">Media/Analysts</a></li>
+                <li><a href="http://www.apache.org/foundation/contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Make a Donation&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/foundation/contributing.html">Donate Now</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via Credit Card</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via ACH</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via PayPal</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html#Bitcoin">&nbsp;&nbsp;Using Bigcoin</a></li>
+                <li><a href="https://www.redbubble.com/people/comdev">Buy Swag</a></li>
+                <li><a href="https://smile.amazon.com/gp/chpf/homepage/ref=smi_se_scyc_srch_stsr?q=apache+software+foundation&amp;orig=%2F">Shop smile.amazon.com</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">ASF Sponsorship</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks#targeted-sponsors">Targeted Sponsorship</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">The Apache Way&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="https://s.apache.org/GhnI">Sustainable Open Source</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">How it Works</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html#meritocracy">Merit</a></li>
+                <li><a href="https://blogs.apache.org/foundation/category/SuccessAtApache">Success at Apache</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">Join Us&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://community.apache.org/gettingStarted/101.html">Getting Started</a></li>
+                <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                <li><a href="https://www.apachecon.com/">ApacheCon</a></li>
+                <li><a href="http://community.apache.org/calendars/">Community Events</a></li>
+                <li><a href="http://www.apache.org/travel/">Travel Assistance</a></li>
+                <li><a href="https://community.apache.org/gsoc.html">Summer of Code</a></li>
+                <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="https://community.apache.org/contributors/etiquette">Etiquette</a></li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/index.html#projects-list">Project List</a></li>
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html#management">How they work</a></li>
+                    <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+                    <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+                    <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+                    <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="http://www.apache.org/foundation/marks/">Brand Management</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">People&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html#roles">Roles</a></li>
+                    <li><a href="http://www.apache.org/foundation/members.html">Members</a></li>
+                    <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+                    <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Board of Directors</a></li>
+                    <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Officers  &amp; Project VPs</a></li>
+                    <li><a href="https://community.zones.apache.org/map.html">Location Map</a></li>
+                    <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://people.apache.org/">Committer Directory</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://community.apache.org/about/">Community Development</a></li>
+                    <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://community.apache.org/">Get Involved</a></li>
+                    <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+                    <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+                    <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">License&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+                    <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+                    <li><a href="http://www.apache.org/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+                    <li><a href="http://www.apache.org/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+                    <li><a href="http://www.apache.org/foundation/marks/list/">Trademarks</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sponsors&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor the ASF</a></li>
+                    <li><a href="http://www.apache.org/foundation/thanks">Sponsor Thanks</a></li>
+                    <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+                    <li><a href="http://www.apache.org/foundation/contributing.html">Individual Donations</a></li>
+                    <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/dist/">Distribution</a></li>
+                <li><a href="https://projects.apache.org/releases.html">Releases</a></li>
+                <li><a href="http://www.apache.org/dyn/closer.cgi">Mirrors</a></li>
+                <li><a href="https://status.apache.org/">Infrastructure Status</a></li>
+                <li><a href="http://www.apache.org/uptime/">Infrastructure Statistics</a></li>
+              </ul>
+            </li>
+            <li class="dropdown hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"
+                  aria-hidden="true"></span><span class="sr-only">Search</span></a>
+              <ul class="dropdown-menu search-form" role="search">
+                <li>
+                  <div class="input-group" style="width: 100%; padding: 0 5px;">
+                    <script>
+                      (function() {
+                      var cx = '005703438322411770421:5mgshgrgx2u';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                      '//cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:searchbox-only></gcse:searchbox-only>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- / Navigation -->
+  <header id="main-header" class="container">
+    <div class="sideImg">
+      <a class="visible-home" href="http://apachecon.com/"><img class="img-responsive" src="http://www.apache.org/img/ApacheCon-PROMO-2019.gif" alt="ApacheCon is Coming 9-12 Sept. 2019 - Las Vegas"></a>
+      <a class="hidden-home" href="http://www.apache.org/"><img class="img-responsive" src="http://www.apache.org/img/ASF20thAnniversary.jpg" alt="The Apache Software Foundation"></a>
+    </div>
+    <div class="main">
+      <img class="img-responsive center-block visible-home" src="http://www.apache.org/img/ASF20thAnniversary.jpg" alt="Apache 20th Anniversary Logo">
+      <h2 class="text-center">Celebrating 20 years of community-led development "The&nbsp;Apache&nbsp;Way"</h2>
+      <ul class="nav navbar-nav navbar-justified">
+        <li class="drowpdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/index.html#projects-list">Project List</a></li>
+            <li><a href="#">How they work</a></li>
+            <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+            <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+            <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+            <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+            <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+            <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+            <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Brand Management</a></li>
+            <li><a href="http://www.apache.org/foundation/glossary.html">Glossary of Terms</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">People&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/foundation/how-it-works.html#roles">Roles</a></li>
+            <li><a href="http://www.apache.org/foundation/members.html">Members</a></li>
+            <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+            <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Board of Directors</a></li>
+            <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Officers &amp; Product VPs</a></li>
+            <li><a href="https://community.zones.apache.org/map.html">Heat Map</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://people.apache.org/">Committer Directory</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://community.apache.org/about/">Community Development</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://community.apache.org/">Get Involved</a></li>
+            <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+            <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+            <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">License&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+            <li><a href="http://www.apache.org/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/list/">Trademarks</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sponsors&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor the ASF</a></li>
+            <li><a href="http://www.apache.org/foundation/thanks">Sponsor Thanks</a></li>
+            <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+            <li><a href="http://www.apache.org/foundation/contributing.html">Individual Donations</a></li>
+            <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sideImg">
+      <a href="http://www.apache.org/foundation/contributing.html"><img class="img-responsive" src="http://www.apache.org/img/support-apache.jpg" alt="Apache Support Logo" /></a>
+    </div>
+  </header>
+  <div class="container"><style type="text/css">
+/* The following code is added by mdx_elementid.py
+   It was originally lifted from http://subversion.apache.org/style/site.css */
+/*
+ * Hide class="elementid-permalink", except when an enclosing heading
+ * has the :hover property.
+ */
+.headerlink, .elementid-permalink {
+  visibility: hidden;
+}
+h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, dt:hover > .elementid-permalink { visibility: visible }</style>
+<h1 id="policy">Release Creation Process<a class="headerlink" href="#policy" title="Permanent link">&para;</a></h1>
+<p>These best practices help guide a PMC through the steps to create 
+and publish an Apache software product release.  It complements
+the formal Apache <a href="http://www.apache.org/dev/release">Release Policy</a>, defining 
+what must be in a software release, and <a href="http://www.apache.org/dev/release-distribution">Release Distribution Policy</a>, 
+which describes the technical details of where releases are placed/mirrored.</p>
+<h1 id="links">Contents<a class="headerlink" href="#links" title="Permanent link">&para;</a></h1>
+<div class="toc">
+<ul>
+<li><a href="#policy">Release Creation Process</a></li>
+<li><a href="#links">Contents</a></li>
+<li><a href="#intro">How To Publish Apache Software Product Releases</a><ul>
+<li><a href="#audience">Intended Audience</a></li>
+</ul>
+</li>
+<li><a href="#goal">What is an Apache Release, Anyway?</a></li>
+<li><a href="#release_manager">Who Manages The Release Process?</a></li>
+<li><a href="#valid">What is a Valid Release Package?</a></li>
+<li><a href="#signed">Signing release artifacts</a></li>
+<li><a href="#voted">Voting to Release</a></li>
+<li><a href="#distribution">Distribution</a><ul>
+<li><a href="#distribution_dist">Normal distributions on www.apache.org</a></li>
+<li><a href="#distribution_maven">Maven Distribution</a></li>
+</ul>
+</li>
+<li><a href="#sync-delay">I've Just Published A Release: Why Isn't It Available From XYZ?</a></li>
+<li><a href="#archive">How Can I Archive An Old Release?</a></li>
+</ul>
+</div>
+<hr />
+<h1 id="intro">How To Publish Apache Software Product Releases<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h1>
+<p>Every Apache Software
+Foundation project software release must meet requirements for <strong>content</strong> , <strong>process</strong> ,
+and <strong>publication</strong>. These requirements ensure that Apache contributors and
+users benefit from appropriate legal protection the ASF provides, and reflect the
+Foundation's goals of open, collaborative software development.</p>
+<h2 id="audience">Intended Audience<a class="headerlink" href="#audience" title="Permanent link">&para;</a></h2>
+<p>This process is meant for Apache committers or PMC members who want to learn how
+to create and publish a release from an Apache project. This provides
+an overview of the process steps, the requirements, and some commonly-used tools, and
+it will provide you with links to other pages with more details.</p>
+<h1 id="goal">What is an Apache Release, Anyway?<a class="headerlink" href="#goal" title="Permanent link">&para;</a></h1>
+<p>An Apache release is a set of <strong> <a href="#valid">valid</a> </strong> , <strong> <a href="#signed">signed</a>
+</strong> , artifacts, <strong> <a href="#voted">voted</a> </strong> on by the appropriate PMC and <strong>
+<a href="#distribution">distributed</a> </strong> on the ASF's official release
+infrastructure. All of the <strong>highlighted</strong> words in the previous sentence
+are critical, and are defined in the following sections.</p>
+<p>In a nutshell, to make a release, an Apache project:</p>
+<ul>
+<li>Has code that complies with the <a href="#valid">software licensing requirements</a></li>
+<li>Decides as a community to make a release, and designates a <a href="#release_manager">release manager</a></li>
+<li>The release manager prepares and <a href="#signed">signs</a> the proposed release materials</li>
+<li>The proposed release is offered for a binding <a href="#voted">vote</a> by the PMC</li>
+<li>If the vote passes, the release manager copies the artifacts to the <a href="#distribution">distribution
+infrastructure</a>.</li>
+</ul>
+<h1 id="release_manager">Who Manages The Release Process?<a class="headerlink" href="#release_manager" title="Permanent link">&para;</a></h1>
+<p>The common practice at Apache is for a single individual to take
+responsibility for the mechanics of a release. That individual is called
+the 'release manager.' Release managers take care of shepherding a release
+from an initial community consensus to make it to final distribution.</p>
+<p>Release managers do the work of pushing out releases. However, release
+managers are not ultimately responsible. The PMC in general, and the PMC
+chair in particular (as an officer of the Foundation) is responsible for
+compliance with requirements.</p>
+<p>Any committer may serve as the manager of a release.</p>
+<p>A release starts when the project community agrees to make a release.
+However, no release manager can make a valid release unless the community
+has taken the necessary steps to prepare in advance. The source code and
+build process must comply with the legal and intellectual property
+requirements for a <a href="#valid">valid</a> release, and the project must have the
+infrastructure in place to correctly <a href="#sign">sign</a> the release artifacts.</p>
+<h1 id="valid">What is a Valid Release Package?<a class="headerlink" href="#valid" title="Permanent link">&para;</a></h1>
+<p>The Apache Software Foundation exists to create open source software. Thus,
+the fundamental requirement for a release is that it consist of the
+necessary source code to build the project. Optionally, a release may
+also be accompanied by compiled binaries for the convenience of users.</p>
+<p>All the source code of the project must be covered by the Apache License,
+version 2.0. The license or appropriate boilerplate text must be included in each source file. For the license
+to be valid, the code must have been contributed by an individual covered
+by an appropriate contributor license agreement, or have otherwise been
+licensed to the Foundation and passed through IP clearance. See <a href="http://www.apache.org/licenses/">this
+page</a> for details on licensing and <a href="http://www.apache.org/dev/release.html">this
+FAQ</a> for details on release
+requirements. When in doubt, contact the Foundation's Legal resources by
+filing a JIRA under the 'LEGAL' project. The
+<a href="http://creadur.apache.org/rat/">Apache RAT</a> tool can assist in checking for
+compliance.</p>
+<p>Many projects have dependencies on non-Apache components. For an Apache
+release to be valid, it may only depend on non-Apache components that have
+compatible licenses. For more information on third party licenses allowed, see <a href="http://www.apache.org/legal/resolved.html">ASF
+Legal Previously Asked
+Questions</a>.</p>
+<h1 id="signed">Signing release artifacts<a class="headerlink" href="#signed" title="Permanent link">&para;</a></h1>
+<p>The files that make up an Apache release are <strong>always</strong> accompanied by
+cryptographic signatures. This allows users to ensure that the files have
+not been tampered with since they were created. The mechanics of signing depend on the project's
+build technology. The Apache infrastructure group strongly recommends that
+projects set up automated infrastructure to sign the files to simplify the work. 
+Generally, projects set up their build system so
+that the same process that creates the files for a release also signs them.</p>
+<p>The process of setting up to sign the code is somewhat complicated, and it
+is described on the <a href="http://www.apache.org/dev/release-signing.html">release signing</a> page. If you
+plan to serve as a release manager, you should generate a key and publish
+it well in advance of creating a release.</p>
+<h1 id="voted">Voting to Release<a class="headerlink" href="#voted" title="Permanent link">&para;</a></h1>
+<p>A <a href="http://www.apache.org/dev/release-distribution#approving-a-release">binding release vote</a> of the PMC is the critical gating step in the release
+process. Without such a vote, the release is just a set of files prepared
+by an individual. After such a vote, it is a formal offering of the ASF,
+backed by the 'full faith and credit' of the Foundation. </p>
+<h1 id="distribution">Distribution<a class="headerlink" href="#distribution" title="Permanent link">&para;</a></h1>
+<p>The Apache infrastructure <em>must</em> be the primary source for all artifacts
+officially released by the ASF.</p>
+<p>The Apache Infrastructure team maintains the Apache release distribution
+infrastructure. This infrastructure has two parts: the mirrored directories
+on <code>www.apache.org</code> and the Maven repository on <code>repository.apache.org</code>.</p>
+<h2 id="distribution_dist">Normal distributions on www.apache.org<a class="headerlink" href="#distribution_dist" title="Permanent link">&para;</a></h2>
+<p>See the <a href="http://www.apache.org/dev/release-distribution">Release Distribution Policy</a> for specific technical requirements.</p>
+<p>Each Apache TLP has a <code>release/</code><em>TLP-name</em> directory in the <strong>distribution</strong>
+Subversion repository at <a href="https://dist.apache.org/repos/dist/">https://dist.apache.org/repos/dist/</a>.
+Once a release vote passes, the release manager should add the artifacts
+(plus signature and hash files) into this location. Each project is responsible for
+the structure of its directory. The contents of these directories are pushed to
+<a href="http://www.apache.org/dist/">http://www.apache.org/dist/</a> by <code>svnpubsub</code>.  Note that only the most
+recent version of each supported release line should be stored here; see
+<a href="http://www.apache.org/dev/release#when-to-archive">when to archive</a>.</p>
+<p>The contents of the <code>dist/release/</code> directories are published to the 3rd party mirrors using rsync.</p>
+<p><strong>PLEASE NOTE</strong>
+The SVN directories under <code>https://dist.apache.org/repos/dist/</code> are <strong>not</strong> to be used to link to releases on download
+pages or elsewhere.
+Download pages <strong>must</strong> use the ASF mirror system, for details please see
+<a href="http://www.apache.org/dev/release-download-pages.html#links">Download links</a>.</p>
+<p>A signature (<code>.asc</code>) can become <em>invalid</em> because the signing key is revoked
+or expires.
+All <em>current signatures</em> (those in <code>www.apache.org/dist/</code>)
+must be <em>valid</em>.</p>
+<p>Hash, signature and KEYS files are <em>not</em> propagated to the mirrors ;
+these files are excluded :</p>
+<p><code>*.md5 *.sha *.sha1 *.sha256 *.sha512 *.asc *.sig KEYS *.mds MD5SUM SHA*SUM</code></p>
+<p>The current list is
+<a href="https://github.com/apache/infrastructure-puppet/blob/deployment/modules/rsync_mirror/manifests/init.pp">here</a>.</p>
+<p>Please don't publish <code>.md5</code> files, because MD5 is
+<a href="https://en.wikipedia.org/wiki/MD5#Overview_of_security_issues">too broken</a>.
+<br>
+Please don't publish <code>.sig</code> files.
+Make sure your .asc's are <em>plain text</em> files.</p>
+<p><strong>The download page should use HTTPS: rather than plain HTTP: for linking to KEYS, sigs and hashes.</strong>
+For example: <code>https://www.apache.org/dist/httpd/KEYS</code></p>
+<p>In addition to the checksum files required in the
+<a href="http://www.apache.org/dev/release-distribution">Release Distribution Policy</a>,
+an MD5SUM or SHA*SUM may be provided.
+MD5SUM and SHA*SUM must look like the output of md5sum(1): lines containing
+a checksum, followed by a filename ; use only plain filenames (no slashes).</p>
+<p>Do not use any other file names for such files.</p>
+<p>If the directory does not yet exist, please raise a JIRA for INFRA with the required info as per
+<a href="https://www.apache.org/dev/infra-contact#what-we-need-to-know">Providing needed information</a></p>
+<p><strong>N.B.</strong> By default, only PMC/PPMC members have write access to the dist/release directories
+(whereas dist/dev by default allows write access by committers).</p>
+<h2 id="distribution_maven">Maven Distribution<a class="headerlink" href="#distribution_maven" title="Permanent link">&para;</a></h2>
+<p>See the <a href="http://www.apache.org/dev/publishing-maven-artifacts.html">Publishing Maven
+Releases</a> guide.</p>
+<ul>
+<li>don't try to publish .sha256, .sha512 files yet; Nexus doesn't handle them (as of March 2018)</li>
+<li>.md5's in <code>dist.apache.org/repos/dist/release/</code> must be removed manually.</li>
+</ul>
+<h1 id="sync-delay">I've Just Published A Release: Why Isn't It Available From XYZ?<a class="headerlink" href="#sync-delay" title="Permanent link">&para;</a></h1>
+<p>Apache uses svnpubsub internally and rsync mirrroring externally.
+Files committed to the
+Subversion repository at <a href="https://dist.apache.org/repos/dist/">https://dist.apache.org/repos/dist/</a> are automatically
+copied, using svnpubsub, to
+<code>www.apache.org</code> , and then the external mirrors pick up the files from
+<code>www.apache.org</code>. It may take up to 24 hours or more for a newly published
+release to be sync'd to all mirrors. Mirrors have their own schedules. <a href="http://www.apache.org/info/how-to-mirror.html#Requirements">Mirrors
+are required</a> to check at least once
+a day, but most will check for updates 2 to 4 times per day.</p>
+<p><a name="archivingOldReleases"></a></p>
+<h1 id="archive">How Can I Archive An Old Release?<a class="headerlink" href="#archive" title="Permanent link">&para;</a></h1>
+<p>See <a href="http://www.apache.org/dev/release#archived]">here</a> and <a href="http://www.apache.org/dev/release#how-to-archive">here</a>.</p></div>
+
+  <!-- Footer -->
+  
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-2">
+          <h5 class="white">Community</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://community.apache.org/">Overview</a></li>
+            <li><a href="http://www.apache.org/foundation/conferences.html">Conferences</a></li>
+            <li><a href="http://community.apache.org/gsoc.html">Summer of Code</a></li>
+            <li><a href="http://community.apache.org/newcomers/">Getting Started</a></li>
+            <li><a href="http://www.apache.org/foundation/how-it-works.html">The Apache Way</a></li>
+            <li><a href="http://www.apache.org/travel/">Travel Assistance</a></li>
+            <li><a href="http://www.apache.org/foundation/getinvolved.html">Get Involved</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct.html">Code of Conduct</a></li>
+            <li><a href="http://community.apache.org/newbiefaq.html">Community FAQ</a></li>
+            <li><a href="http://www.apache.org/memorials/">Memorials</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Innovation</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://incubator.apache.org/">Incubator</a></li>
+            <li><a href="http://labs.apache.org/">Labs</a></li>
+            <li><a href="http://www.apache.org/licenses/">Licensing</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Tech Operations</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/dev/">Developer Information</a></li>
+            <li><a href="http://www.apache.org/dev/infrastructure.html">Infrastructure</a></li>
+            <li><a href="http://www.apache.org/security/">Security</a></li>
+            <li><a href="http://status.apache.org/">Status</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Press</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/press/">Overview</a></li>
+            <li><a href="https://blogs.apache.org/">ASF News</a></li>
+            <li><a href="https://blogs.apache.org/foundation/">Announcements</a></li>
+            <li><a href="https://twitter.com/TheASF">Twitter Feed</a></li>
+            <li><a href="http://www.apache.org/press/#contact">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Legal</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/legal/">Legal Affairs</a></li>
+            <li><a href="http://www.apache.org/legal/dmca.html">DMCA</a></li>
+            <li><a href="http://www.apache.org/licenses/">Licensing</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="http://www.apache.org/foundation/records/">Public Records</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/privacy.html">Privacy Policy</a></li>
+            <li><a href="http://www.apache.org/licenses/exports/">Export Information</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+
+      </div>
+      <hr class="col-lg-12 hr-white" />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Copyright &#169; 2019 The Apache Software Foundation, Licensed under the <a class="white" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+          <p class="text-center">Apache and the Apache feather logo are trademarks of The Apache Software Foundation. </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- / Footer -->
+
+  <script src="http://www.apache.org/js/jquery-2.1.1.min.js"></script>
+  <script src="http://www.apache.org/js/bootstrap.js"></script>
+  <script>
+    (function($){
+    $(document).ready(function(){
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).parent().siblings().removeClass('open');
+    $(this).parent().toggleClass('open');
+    console.log('WOrked');
+    });
+    });
+    })(jQuery);
+  </script>
+</body>
+
+<!-- Mirrored from www.apache.org/dev/release-publishing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+</html>

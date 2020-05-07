@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ 
+<!-- Mirrored from www.apache.org/dist/apr/Announcement1.x.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+       <meta name="author" content="APR" /><meta name="email" content="dev@apr.apache.org" />
+    <title>Apache Portable Runtime library 1.7.0 Released</title>
+ </head>
+ <body bgcolor="#ffffff" text="#000000" link="#525D76">
+<p><a href="http://apr.apache.org/"><img src="http://apr.apache.org/images/apr_logo_wide.png" alt="The Apache Portable Runtime Project" border="0"/></a></p>
+
+<h1>
+   Apache Portable Runtime APR 1.7.0 Released
+</h1>
+
+<p>
+   The Apache Software Foundation and the Apache Portable Runtime
+   Project are proud to announce the General Availability of version
+   1.7.0 of the Apache Portable Runtime library (APR). Version 1.6.1
+   of the APR Utility library (APR-util) and version 1.2.2 of the
+   APR iconv library (APR-iconv) remain current.
+</p>
+
+<p>
+   There are a number of specific changes in how APR is deployed
+   and how APR-util deals with external dependencies in these current
+   releases, which may be disruptive to existing build strategies:
+</p>
+
+<ul>
+  <li>The typical cross-process locking stragegy now defaults to
+      a pthreads lock which will not leak on abnormal process termination,
+      as opposed to the earlier sysv semaphore locking strategy.
+      This should result in fewer orphaned locks in misbehaving
+      applications.
+  </li>
+  <li>Netware users should be aware that APR mis-defined the entity
+      representing an "os mutex", and it was missing a level of
+      indirection. The new definition should allow the use of the
+      apr_os_proc_mutex_get/_put API's on the Netware platform but
+      requires a rebuild against the APR 1.7.0 or later library.
+  </li>
+  <li>Expat sources are no longer bundled, this is now an external
+      dependency. Install libexpat runtime (usually installed by
+      default) and development packages using your system's package
+      manager, or from <a href="https://libexpat.github.io/"
+      >https://libexpat.github.io/</a>.<br />
+  </li>
+  <li>MySQL support is updated as advised by the MySQL developers.
+      MySQL versions older than 5.5 should not be used. If you do
+      use an old MySQL version, use the thread-safe libmysqlclient_r
+      version of the library.<br />
+  </li>
+  <li>FreeTDS partial and incomplete support has been dropped.
+      Users of MSSQL and SYBASE databases are recommended to use
+      the ODBC driver instead.
+  </li>
+</ul>
+<p>
+   APR 1.7.0, APR-util 1.6.1, and APR-iconv 1.2.2 fix a number
+   of security vulnerabilities, run-time and build-time issues.
+   For details, see;
+</p>
+<dl>
+  <dd><a href="http://www.apache.org/dist/apr/CHANGES-APR-1.7"
+    >http://www.apache.org/dist/apr/CHANGES-APR-1.7</a></dd>
+  <dd><a href="http://www.apache.org/dist/apr/CHANGES-APR-UTIL-1.6"
+    >http://www.apache.org/dist/apr/CHANGES-APR-UTIL-1.6</a></dd>
+  <dd><a href="http://www.apache.org/dist/apr/CHANGES-APR-ICONV-1.2"
+    >http://www.apache.org/dist/apr/CHANGES-APR-ICONV-1.2</a></dd>
+</dl>
+<p>
+   APR is available for download from:
+</p>
+<dl>
+  <dd><a href="http://apr.apache.org/download.cgi"
+    >http://apr.apache.org/download.cgi</a></dd>
+</dl>
+<p>
+   The mission of the Apache Portable Runtime Project is to create
+   and maintain software libraries that provide a predictable and
+   consistent interface to underlying platform-specific
+   implementations. The primary goal is to provide an API to
+   which software developers may code and be assured of predictable
+   if not identical behavior regardless of the platform on which
+   their software is built. We list all known projects using APR
+   at http://apr.apache.org/projects.html - so please let us know
+   if you find our libraries useful in your own projects!
+</p>
+ </body>
+
+<!-- Mirrored from www.apache.org/dist/apr/Announcement1.x.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+</html>

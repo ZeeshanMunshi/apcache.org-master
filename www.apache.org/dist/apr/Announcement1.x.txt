@@ -1,0 +1,60 @@
+   Apache Portable Runtime APR 1.7.0 Released
+
+   The Apache Software Foundation and the Apache Portable Runtime
+   Project are proud to announce the General Availability of version
+   1.7.0 of the Apache Portable Runtime library (APR). Version 1.6.1
+   of the APR Utility library (APR-util) and version 1.2.2 of the
+   APR iconv library (APR-iconv) remain current.
+
+   There are a number of specific changes in how APR is deployed
+   and how APR-util deals with external dependencies in these current
+   releases, which may be disruptive to existing build strategies:
+
+    - The typical cross-process locking stragegy now defaults to
+      a pthreads lock which will not leak on abnormal process termination,
+      as opposed to the earlier sysv semaphore locking strategy.
+      This should result in fewer orphaned locks in misbehaving
+      applications.
+
+    - Netware users should be aware that APR mis-defined the entity
+      representing an "os mutex", and it was missing a level of
+      indirection. The new definition should allow the use of the
+      apr_os_proc_mutex_get/_put API's on the Netware platform but
+      requires a rebuild against the APR 1.7.0 or later library.
+      
+    - Expat sources are no longer bundled, this is now an external
+      dependency. Install libexpat runtime (usually installed by
+      default) and development packages using your system's package
+      manager, or from <https://libexpat.github.io/>.
+
+    - MySQL support is updated as advised by the MySQL developers.
+      MySQL versions older than 5.5 should not be used. If you do
+      use an old MySQL version, use the thread-safe libmysqlclient_r
+      version of the library.
+
+    - FreeTDS partial and incomplete support has been dropped.
+      Users of MSSQL and SYBASE databases are recommended to use
+      the ODBC driver instead.
+
+   APR 1.7.0, APR-util 1.6.1, and APR-iconv 1.2.2 fix a number
+   of security vulnerabilities, run-time and build-time issues.
+   For details, see;
+
+     http://www.apache.org/dist/apr/CHANGES-APR-1.7
+     http://www.apache.org/dist/apr/CHANGES-APR-UTIL-1.6
+     http://www.apache.org/dist/apr/CHANGES-APR-ICONV-1.2
+
+   APR, APR-util and APR-iconv are available for download from:
+
+     http://apr.apache.org/download.cgi
+
+   The mission of the Apache Portable Runtime Project is to create
+   and maintain software libraries that provide a predictable and
+   consistent interface to underlying platform-specific
+   implementations. The primary goal is to provide an API to
+   which software developers may code and be assured of predictable
+   if not identical behavior regardless of the platform on which
+   their software is built. We list all known projects using APR
+   at http://apr.apache.org/projects.html - so please let us know
+   if you find our libraries useful in your own projects!
+

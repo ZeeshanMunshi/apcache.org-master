@@ -1,0 +1,376 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"m",
+				"message"
+			],
+			[
+				"e",
+				"except"
+			],
+			[
+				"add",
+				"add_result"
+			],
+			[
+				"c",
+				"customlog"
+			],
+			[
+				"te",
+				"test_server_ip"
+			],
+			[
+				"s",
+				"sout"
+			],
+			[
+				"access",
+				"access_check"
+			],
+			[
+				"scree",
+				"screen_data"
+			],
+			[
+				"page_",
+				"page_name"
+			],
+			[
+				"log",
+				"login_list"
+			],
+			[
+				"data",
+				"data_return"
+			],
+			[
+				"lo",
+				"login_screens"
+			],
+			[
+				"js",
+				"json_screens"
+			],
+			[
+				"scr",
+				"screens_info"
+			],
+			[
+				"Moni",
+				"monitorDecoys"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"event",
+				"event_csv"
+			],
+			[
+				"set",
+				"set_trace"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/monit_services_test/monit_services_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/ip_configuration_test/lib/ip_config_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/upgrade_test/lib/upgrade_lib.py",
+		"/home/ayadav/.cache/.fr-4cTBdq/reports/reports.url",
+		"/home/ayadav/.cache/.fr-tgrtDo/Sensitive_data/Sensitive_data.url",
+		"/home/ayadav/Desktop/my_prog.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/monit_services_test/__init__.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/monit_services_test/lib/monit_services_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/launch_combined_1.81_feature.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/monitoring_rule_test/monitoring_rules_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/upgrade_test/upgrade_test.py",
+		"/home/ayadav/.cache/.fr-yK1DhB/aaaassss/aaaassss.url",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run198/upgrade_test.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run205/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run197/main_feature_report_19-06-06_1559797164.62.csv",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/api_lib.py",
+		"/home/ayadav/Desktop/feature_Config_json",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/endpoint_license_test/endpoint_license_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/__init__.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/acm_test/lib/acm_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/launch_automation.py",
+		"/home/ayadav/Desktop/Config_json",
+		"/home/ayadav/Desktop/Server_json",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/system_sanity_test/lib/virsh.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/network_summary_test/lib/network_summary_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/mitm_test/lib/mitm_lib.py",
+		"/home/ayadav/.cache/.fr-dsw878/finance dept/finance dept.url",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/ad_deception_test/lib/ad_decption_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/rebuild_test/lib/rebuild.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/shell.py",
+		"/home/ayadav/Desktop/test cases(tentative).txt",
+		"/home/ayadav/Desktop/vmware.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/malware_shobhit/CustVmPrepareWithLogV1.ps1",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/recon_detection_test/lib/recon_detection_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/ossec_automation/ossec_lib/scada/s7.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/honeydoc_test/lib/honeydoc_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/logstash_module_test/lib/logstash_module_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/ui_validation_events_test/lib/filter_panel_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/sinkhole_proxy_test/lib/sinkhole_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/init_automation_web.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/access_check.py",
+		"/home/ayadav/Documents/misc files/Work_fun.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/config/server-10.16.1.81.json",
+		"/home/ayadav/Documents/misc files/Python_optparse1.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/honeydoc_test/honeydoc_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/__init__.py",
+		"/home/ayadav/Documents/misc files/bashsysinfo_func.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/access_control_test/lib/access_control_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/threatstrike_endpoint_windows_test/lib/threatstrike_endpoint_windows_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/evm_nat.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/prepare_networkconfig.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/setup_test_server/net-snmp-5.7.3/perl/SNMP/SNMP.pm",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/setup_test_server/net-snmp-5.7.3/local/net-snmp-cert",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/setup_test_server/net-snmp-5.7.3/testing/rfc1213/snmpfun.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/customization_test/lib/customization_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/launch_combined.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/launch_combined_2.147_feature.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/launch_combined_2.165_feature.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run165/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/upgrade_test/lib/upgrade_verify.sh",
+		"/home/ayadav/Documents/misc files/new_pysysinfo.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/ui_validation_configuration_test/lib/blocking_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/ui_validation_configuration_test/lib/customization_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run162/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/config/server.json",
+		"/home/ayadav/auto_web/Attivo_Automation_Tools/auto_bot/automation_web/tools/automation.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/config/server-10.16.2.165.json",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/attivo_help_test/attivo_help_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/attivo_help_test/lib/attivo_help_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/wget-log.836",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/endpoint_license_test/lib/endpoint_license_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/ossec_automation/data/util.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/tunnel_connect.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/http_req.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/config/config-10.16.1.81.json",
+		"/home/ayadav/Downloads/monitoring-rules-1559114598634.csv",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/customlog.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/attivo_cli_test/lib/cli_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/KeyGenerator/generate_ires_key.sh",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/config/config.json",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/prepare_config.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run138/main_feature_report_19-05-28_1559037282.68.csv",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/es_scripts/es_insert_100_events.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/automation_start_test/lib/automation_start_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/automation_start_test/automation_start_test.py",
+		"/home/ayadav/Desktop/Scrrens_without_json.txt",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/database.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/console_logs/consolelog_10.16.1.81_19-05-28_1559034294.85.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/console_logs/consolelog_10.16.1.81_19-05-28_1559034814.77.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/wget-log.104",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/console_logs/consolelog_10.16.1.81_19-05-24_1558682876.65.log",
+		"/home/ayadav/Desktop/Screens_from_json.txt",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/api_test_2.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/check_process.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/dynamic_engagement_test/dynamic_engagement_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/dynamic_engagement_test/lib/dynamic_engagement_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/customization_test/perform_customization_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/attivo_cli_test/attivo_cli_test.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/ui_validation_events_test/ui_validation_events_test.py",
+		"/home/ayadav/Desktop/Extra_Screens_from_json.txt",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/ossec_automation/data/user_add_remove.sh",
+		"/home/ayadav/Desktop/attivo_help_test.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/utility_function_bck_up/api_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/attivo_help_test/lib/attivo_help_config.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/ping_evm_api.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/psexec_linux/impacket-master/examples/os_ident.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/lacp_test/lib/lacp_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run87/automation_start_test.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run87/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/ntpd_test/lib/ntpd_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/utility_function_bck_up/access_check.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/amgen_external_ip_test/lib/amgen_external_ip_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run70/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/Tools/Botsink Test Traffic Tool/BOTsink_Traffic_v3.0_MAC/paramiko/channel.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/syslog_test/lib/syslog_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run65/automation_start_test.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run65/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run62/automation_start_test.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run62/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/reports/feature/run58/feature.log",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/config/server-10.16.2.120.json",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/lib_custom/http_req_custom.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/reverse_dns_test/lib/reverse_dns_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/wget-log.75",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/automation_lib/es_query.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/backup_restore_test/lib/backup_restore_lib.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/custom_scripts/docker/lib/2017_latest_docker.py",
+		"/home/ayadav/ayadav_R4_2_MR1_DEV/Attivo_Automation_Tools/auto_bot/feature_automation/threatpath_test/lib/threatpath_lib.py"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 125.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bootstrap.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install paca",
+				"Attivo_Automation_Tools/auto_bot/setup_test_server/pip_install_packages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

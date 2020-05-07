@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.apache.org/dev/crypto.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of The Apache Software Foundation">
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="http://www.apache.org/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://www.apache.org/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.apache.org/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://www.apache.org/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.apache.org/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://www.apache.org/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://www.apache.org/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://www.apache.org/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://www.apache.org/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://www.apache.org/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="http://www.apache.org/favicons/manifest.json">
+  <link rel="shortcut icon" href="http://www.apache.org/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="http://www.apache.org/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="http://www.apache.org/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#282661">
+
+  <title>Handling Cryptography within an ASF Release</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+  <link href="http://www.apache.org/css/min.bootstrap.css" rel="stylesheet">
+  <link href="http://www.apache.org/css/styles.css" rel="stylesheet">
+  
+  <link rel="alternate" href="http://mail-archives.apache.org/mod_mbox/www-legal-discuss/?format=atom"
+      type="application/atom+xml" title="" />
+  
+
+  <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at . http://www.apache.org/licenses/LICENSE-2.0 . Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. -->
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top mainmenu">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mainnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav-collapse">
+          <ul class="nav navbar-nav navbar-justified">
+            <li>
+              <form class="visible-xs">
+                <div class="input-group" style="width: 100%;">
+                  <script>
+                    (function() {
+                    var cx = '005703438322411770421:5mgshgrgx2u';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:searchbox-only></gcse:searchbox-only>
+                </div>
+              </form>
+            </li>
+            <li><a href="http://www.apache.org/index.html#news">News</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/foundation">Overview</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">Process</a></li>
+                <li><a href="http://www.apache.org/foundation/governance/">Governance</a></li>
+                <li><a href="http://www.apache.org/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="http://www.apache.org/foundation/governance/members.html">Membership</a></li>
+                <li><a href="https://community.apache.org/">Community</a></li>
+                <li><a href="http://www.apache.org/foundation/glossary.html">Glossary</a></li>
+                <li><a href="http://www.apache.org/foundation/preFAQ.html">FAQ</a></li>
+                <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html">Support Apache</a></li>
+                <li><a href="http://www.apache.org/press/">Media/Analysts</a></li>
+                <li><a href="http://www.apache.org/foundation/contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Make a Donation&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/foundation/contributing.html">Donate Now</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via Credit Card</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via ACH</a></li>
+                <li><a href="https://donate.apache.org/">&nbsp;&nbsp;Via PayPal</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html#Bitcoin">&nbsp;&nbsp;Using Bigcoin</a></li>
+                <li><a href="https://www.redbubble.com/people/comdev">Buy Swag</a></li>
+                <li><a href="https://smile.amazon.com/gp/chpf/homepage/ref=smi_se_scyc_srch_stsr?q=apache+software+foundation&amp;orig=%2F">Shop smile.amazon.com</a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">ASF Sponsorship</a></li>
+                <li><a href="http://www.apache.org/foundation/thanks#targeted-sponsors">Targeted Sponsorship</a></li>
+                <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">The Apache Way&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/theapacheway/index.html">The Apache Way</a></li>
+                <li><a href="https://s.apache.org/GhnI">Sustainable Open Source</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html">How it Works</a></li>
+                <li><a href="http://www.apache.org/foundation/how-it-works.html#meritocracy">Merit</a></li>
+                <li><a href="https://blogs.apache.org/foundation/category/SuccessAtApache">Success at Apache</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdopwn-toggle" data-toggle="dropdown">Join Us&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://community.apache.org/gettingStarted/101.html">Getting Started</a></li>
+                <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                <li><a href="https://www.apachecon.com/">ApacheCon</a></li>
+                <li><a href="http://community.apache.org/calendars/">Community Events</a></li>
+                <li><a href="http://www.apache.org/travel/">Travel Assistance</a></li>
+                <li><a href="https://community.apache.org/gsoc.html">Summer of Code</a></li>
+                <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                <li><a href="https://community.apache.org/contributors/etiquette">Etiquette</a></li>
+                <li class="dropdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/index.html#projects-list">Project List</a></li>
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html#management">How they work</a></li>
+                    <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+                    <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+                    <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+                    <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+                    <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="http://www.apache.org/foundation/marks/">Brand Management</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">People&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/foundation/how-it-works.html#roles">Roles</a></li>
+                    <li><a href="http://www.apache.org/foundation/members.html">Members</a></li>
+                    <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+                    <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Board of Directors</a></li>
+                    <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Officers  &amp; Project VPs</a></li>
+                    <li><a href="https://community.zones.apache.org/map.html">Location Map</a></li>
+                    <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://people.apache.org/">Committer Directory</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://community.apache.org/about/">Community Development</a></li>
+                    <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+                    <li><a href="https://community.apache.org/">Get Involved</a></li>
+                    <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+                    <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+                    <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+                    <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+                    <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">License&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+                    <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+                    <li><a href="http://www.apache.org/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+                    <li><a href="http://www.apache.org/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+                    <li><a href="http://www.apache.org/foundation/marks/list/">Trademarks</a></li>
+                  </ul>
+                </li>
+                <li class="drowpdown dropdown-submenu visible-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sponsors&nbsp;<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor the ASF</a></li>
+                    <li><a href="http://www.apache.org/foundation/thanks">Sponsor Thanks</a></li>
+                    <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+                    <li><a href="http://www.apache.org/foundation/contributing.html">Individual Donations</a></li>
+                    <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.apache.org/dist/">Distribution</a></li>
+                <li><a href="https://projects.apache.org/releases.html">Releases</a></li>
+                <li><a href="http://www.apache.org/dyn/closer.cgi">Mirrors</a></li>
+                <li><a href="https://status.apache.org/">Infrastructure Status</a></li>
+                <li><a href="http://www.apache.org/uptime/">Infrastructure Statistics</a></li>
+              </ul>
+            </li>
+            <li class="dropdown hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"
+                  aria-hidden="true"></span><span class="sr-only">Search</span></a>
+              <ul class="dropdown-menu search-form" role="search">
+                <li>
+                  <div class="input-group" style="width: 100%; padding: 0 5px;">
+                    <script>
+                      (function() {
+                      var cx = '005703438322411770421:5mgshgrgx2u';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                      '//cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:searchbox-only></gcse:searchbox-only>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- / Navigation -->
+  <header id="main-header" class="container">
+    <div class="sideImg">
+      <a class="visible-home" href="http://apachecon.com/"><img class="img-responsive" src="http://www.apache.org/img/ApacheCon-PROMO-2019.gif" alt="ApacheCon is Coming 9-12 Sept. 2019 - Las Vegas"></a>
+      <a class="hidden-home" href="http://www.apache.org/"><img class="img-responsive" src="http://www.apache.org/img/ASF20thAnniversary.jpg" alt="The Apache Software Foundation"></a>
+    </div>
+    <div class="main">
+      <img class="img-responsive center-block visible-home" src="http://www.apache.org/img/ASF20thAnniversary.jpg" alt="Apache 20th Anniversary Logo">
+      <h2 class="text-center">Celebrating 20 years of community-led development "The&nbsp;Apache&nbsp;Way"</h2>
+      <ul class="nav navbar-nav navbar-justified">
+        <li class="drowpdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/index.html#projects-list">Project List</a></li>
+            <li><a href="#">How they work</a></li>
+            <li><a href="https://community.apache.org/projectIndependence.html">Independence</a></li>
+            <li><a href="https://projects.apache.org/committees.html?date">Date Founded</a></li>
+            <li><a href="https://projects.apache.org/projects.html?name">Names</a></li>
+            <li><a href="https://projects.apache.org/projects.html?category">Categories</a></li>
+            <li><a href="https://projects.apache.org/projects.html?language">Languages</a></li>
+            <li><a href="https://projects.apache.org/statistics.html">Statistics</a></li>
+            <li><a href="https://incubator.apache.org/">Apache Incubator</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Brand Management</a></li>
+            <li><a href="http://www.apache.org/foundation/glossary.html">Glossary of Terms</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">People&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/foundation/how-it-works.html#roles">Roles</a></li>
+            <li><a href="http://www.apache.org/foundation/members.html">Members</a></li>
+            <li><a href="https://community.apache.org/contributors/">Committers</a></li>
+            <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Board of Directors</a></li>
+            <li><a href="http://www.apache.org/foundation/#who-runs-the-asf">Officers &amp; Product VPs</a></li>
+            <li><a href="https://community.zones.apache.org/map.html">Heat Map</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://people.apache.org/">Committer Directory</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://community.apache.org/about/">Community Development</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://community.apache.org/">Get Involved</a></li>
+            <li><a href="https://community.apache.org/mentoringprogramme.html">Mentoring</a></li>
+            <li><a href="https://helpwanted.apache.org/">Help Wanted</a></li>
+            <li><a href="https://community.apache.org/calendars/">Community Events</a></li>
+            <li><a href="https://community.apache.org/newbiefaq.html">FAQ</a></li>
+            <li><a href="https://community.apache.org/lists.html">Mailing Lists</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">License&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/licenses/contributor-agreements.html">Contributor License Agreements</a></li>
+            <li><a href="http://www.apache.org/licenses/contributor-agreements.html#grants">Software Grants</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/list/">Trademarks</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sponsors&nbsp;<span class="caret hidden-sm"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsor the ASF</a></li>
+            <li><a href="http://www.apache.org/foundation/thanks">Sponsor Thanks</a></li>
+            <li><a href="http://www.apache.org/foundation/contributing.html#CorporateGiving">Corporate Giving</a></li>
+            <li><a href="http://www.apache.org/foundation/contributing.html">Individual Donations</a></li>
+            <li><a href="https://www.redbubble.com/people/comdev/">Buy Stuff</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sideImg">
+      <a href="http://www.apache.org/foundation/contributing.html"><img class="img-responsive" src="http://www.apache.org/img/support-apache.jpg" alt="Apache Support Logo" /></a>
+    </div>
+  </header>
+  <div class="container"><style type="text/css">
+/* The following code is added by mdx_elementid.py
+   It was originally lifted from http://subversion.apache.org/style/site.css */
+/*
+ * Hide class="elementid-permalink", except when an enclosing heading
+ * has the :hover property.
+ */
+.headerlink, .elementid-permalink {
+  visibility: hidden;
+}
+h2:hover > .headerlink, h3:hover > .headerlink, h1:hover > .headerlink, h6:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, dt:hover > .elementid-permalink { visibility: visible }</style>
+<h1 id="purpose-and-intended-audience">Purpose and Intended Audience<a class="headerlink" href="#purpose-and-intended-audience" title="Permanent link">&para;</a></h1>
+<p>This page provides PMC members with the information they need to ensure
+U.S. export control laws are satisfied for ASF product distributions that
+contain or are designed, or modified to use, cryptography for data confidentiality.</p>
+<p><strong>This page is not intended for users of Apache products. Users should
+consult the <a href="http://www.apache.org/licenses/exports/">export control status of our products</a>.</strong> </p>
+<p><strong>Note - the regulations covering US export control laws for encryption are
+continuously changing and the last modification of this page was May 24, 2019. 
+This page describes the process which should be continued until an updated version has
+been drawn up and approved by the Apache VP Legal Affairs.</strong></p>
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<p>The U.S. Government places <a href="http://www.bis.doc.gov/licensing/exportingbasics.htm">restrictions on the
+export</a> of some types
+of software, such as software employing cryptographic functions.
+Fortunately, EAR Section 742.15(b), applies to most of the cryptography of concern to the ASF.</p>
+<p>PMCs considering including cryptographic functionality within their
+products or specially designing their products to use other software with
+cryptographic functionality should take the following steps <strong>before
+placing such code on any ASF server, <em>including commits to subversion/git</em> </strong> :</p>
+<ol>
+<li>
+<p><a href="#classify">Check the Export Control Classification Number (ECCN)</a>.</p>
+</li>
+<li>
+<p><a href="#sources">Update the Exports Page with Source Links</a>.</p>
+</li>
+<li>
+<p><a href="#notify">Notify the U.S. Government of the new code</a>.</p>
+</li>
+<li>
+<p><a href="#inform">Inform users with a crypto notice in the distribution's README and
+download pages</a>.
+This document will help PMCs with each of these steps and will answer:</p>
+</li>
+<li>
+<p><a href="#faq">Frequently Asked Questions</a>.</p>
+</li>
+</ol>
+<h1 id="updates">Notification of Updates to this Page<a class="headerlink" href="#updates" title="Permanent link">&para;</a></h1>
+<p>Updates to this page are sent to the
+<a href="http://www.apache.org/foundation/mailinglists.html#foundation-legal">legal-discuss</a>
+mailing list.</p>
+<h1 id="classify">Check the Export Control Classification Number (ECCN)<a class="headerlink" href="#classify" title="Permanent link">&para;</a></h1>
+<p>Section 742.15(b) of the <a href="http://www.access.gpo.gov/bis/ear/ear_data.html">Export Administration Regulations
+(EAR)</a> authorizes exports
+and reexports, without review, of encryption source and object code
+provided the following conditions are met:</p>
+<ul>
+<li>
+<p>the encryption source code is controlled by ECCN 5D002</p>
+</li>
+<li>
+<p>the encryption source code will be publicly available (published and made 
+available to the public without restrictions upon its further dissemination)</p>
+</li>
+<li>
+<p>a notification is sent to the U.S. Government's Bureau of Industry and
+Security (BIS) and the ENC Encryption Request Coordinator 
+at or before making the code publicly available.
+Current ASF processes satisfy the "publicly available" requirement. The
+notification requirement is described <a href="#notify">below</a>. However, it is 
+important to ensure the included cryptographic
+functionality meets the definition of <a href="http://www.access.gpo.gov/bis/ear/txt/ccl5-pt2.txt">ECCN
+5D002</a> , which can be
+summarized as:</p>
+<ul>
+<li>Software specially designed or modified for the development, production
+or use of any of the other software of this list, or software designed to
+certify other software on this list; or</li>
+<li>Software using a "symmetric algorithm" employing a key length in excess
+of 56-bits; or</li>
+<li>Software using an "asymmetric algorithm" where the security of the
+algorithm is based on: factorization of integers in excess of 512 bits
+(e.g., RSA), computation of discrete logarithms in a multiplicative group
+of a finite field of size greater than 512 bits (e.g., Diffie-Hellman over
+Z/pZ), or other discrete logarithms in a group in excess of 112 bits (e.g.,
+Diffie-Hellman over an elliptic curve).</li>
+<li>Software designed or modified to perform cryptanalytic functions
+If the cryptographic functionality is limited to one of the above
+definitions, it should be classified as ECCN 5D002, and the remaining two
+steps should be taken (described below). If the release may contain
+cryptographic functionality beyond what is described above, please contact
+the <a href="http://www.apache.org/foundation/">ASF Vice President for Legal Affairs</a>.</li>
+</ul>
+</li>
+</ul>
+<h1 id="sources">Update the Exports Page with Source Links<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h1>
+<p>To satisfy the BIS requirements to make source code available for
+inspection, while minimizing the number of <a href="#notify">notification emails</a>
+needed to be sent, the ASF maintains a single web page at
+<a href="http://www.apache.org/licenses/exports/">http://www.apache.org/licenses/exports/</a>
+with links to the applicable source code for each version of each ASF
+product classified as ECCN 5D002.</p>
+<p>To make updates to this ASF-wide Exports page as simple and consistent as
+possible, the <a href="https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/licenses/exports/index.page/eccnmatrix.xml">source XML
+page</a>
+contains a list of XML trees under <code>eccnmatrix</code> that can be edited by
+anyone with site-dev karma (which includes all of the PMC chairs). Note
+that the exports web page is generated from the XML.</p>
+<p>Any edits to the exports page should be tested using both the site build
+process (view the index.html before committing any changes) and by running
+the bisnotice.xsl transform on the product added/changed (see below). You
+can probably figure out what the content of the XML fields should be by
+following the example of other projects and reading the page. If you have
+any further questions about the content, or if you are not sure that a BIS
+notice is required, please check the <a href="#faq">FAQs</a> first and then bring any
+remaining questions to the legal-discuss mailing list. Note that the
+product data should only be version-specific if the classification changes
+(e.g., Apache HTTP Server version 1.3 vs 2.0) or if the link to the
+controlled source code needs to change, such as if the encryption library
+included in the product for different releases came from different
+manufacturers. In addition, note that it is possible to include both
+controlled and non-controlled (ECCN "n/a") products in the list, but a BIS
+notice is only necessary for the products that have at least one version
+classified as ECCN 5D002.</p>
+<h1 id="notify">Notify the U.S. Government of the Release<a class="headerlink" href="#notify" title="Permanent link">&para;</a></h1>
+<p>After ensuring the distribution's cryptography qualifies for an exemption 
+under Section 742.15(b)
+and after ensuring the applicable source code is linked from the
+ASF-wide export page, but <strong>before publicly posting the distribution or
+committing the controlled code</strong> , send an email using the template below.</p>
+<p>An XSLT transformer called<code>
+<a href="https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/licenses/exports/bisnotice.xsl">bisnotice.xsl</a>
+</code>has also been provided to generate the BIS notice for a product
+based on the XML data. For example, running it as:</p>
+<div class="codehilite"><pre>    $ <span class="n">cd</span> <span class="p">{</span><span class="n">SVNROOT</span><span class="p">}</span><span class="o">/</span><span class="n">infrastructure</span><span class="o">/</span><span class="n">site</span><span class="o">/</span><span class="n">trunk</span><span class="o">/</span>
+    $ <span class="n">svn</span> <span class="n">up</span>
+    $ <span class="n">cd</span> <span class="n">content</span><span class="o">/</span><span class="n">licenses</span><span class="o">/</span><span class="n">exports</span><span class="o">/</span>
+    $ <span class="n">java</span> <span class="o">-</span><span class="n">Xbootclasspath</span><span class="o">/</span><span class="n">p</span><span class="p">:.</span><span class="o">./</span><span class="p">.</span><span class="o">./</span><span class="p">.</span><span class="o">./</span><span class="n">lib</span><span class="o">/</span><span class="n">xalan</span><span class="p">.</span><span class="n">jar</span> <span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">xalan</span><span class="p">.</span><span class="n">xslt</span><span class="p">.</span><span class="n">Process</span> <span class="o">\</span>
+      <span class="o">-</span><span class="n">in</span> <span class="n">index</span><span class="p">.</span><span class="n">page</span><span class="o">/</span><span class="n">eccnmatrix</span><span class="p">.</span><span class="n">xml</span> <span class="o">-</span><span class="n">xsl</span> <span class="n">bisnotice</span><span class="p">.</span><span class="n">xsl</span> <span class="o">\</span>
+      <span class="o">-</span><span class="n">param</span> <span class="n">product</span> <span class="s">&#39;Apache HTTP Server&#39;</span>
+</pre></div>
+
+
+<p>will result in text output that looks like an email template for the PMC
+chair to send to the appropriate addresses. A generic example is provided
+below. Note that the product parameter selects which product(s) to print
+based on matching a substring of the product name. The template output is
+only correct when a single product is matched.</p>
+<p>There are also some sample script files in the top-level directory (site/trunk): 
+bisnotice.cmd (Windows) and bisnotice.sh (Un*x)
+<pre>
+   TO: crypt AT bis.doc.gov, 
+       enc AT nsa.gov, 
+       web_site AT bis.doc.gov
+   CC: {applicable project list}, 
+       {legal-archive AT a.o}<br />
+   SUBJ: Section 742.15 NOTIFICATION - Encryption</p>
+<hr />
+<p>SUBMISSION TYPE:      Section 742.15</p>
+<p>SUBMITTED BY:         {PMC member sending email}</p>
+<p>SUBMITTED FOR:        Apache Software Foundation</p>
+<p>POINT OF CONTACT:     Secretary, Apache Software Foundation</p>
+<p>FAX:                  +1-919-573-9199</p>
+<p>MANUFACTURER(S)       {list of origin of all crypto code, e.g.
+                         "OpenSSL Project" or "Apache Software Foundation."
+                         If product includes multiple crypto items from 
+                         different origins, list all origins.}</p>
+<p>PRODUCT NAME/MODEL #: {Apache product name(s) that include the source
+                          code found at the URL below, or any binaries
+                          that were created by compiling that source code
+                          -- do not specify version numbers if the 
+                          future versions will use source code found at 
+                          the same URL (even if the source is updated at
+                          that URL) }</p>
+<p>ECCN:                 5D002</p>
+<p>NOTIFICATION:         http://www.apache.org/licenses/exports/</pre></p>
+<h1 id="inform">Inform Users by Including a Crypto Notice in the Distribution's README<a class="headerlink" href="#inform" title="Permanent link">&para;</a></h1>
+<p>Should the software qualify for the Section 742.15(b) exemption, the notice below should
+be placed into each distribution's README file. `
+   This distribution includes cryptographic software.  The country in 
+   which you currently reside may have restrictions on the import, 
+   possession, use, and/or re-export to another country, of 
+   encryption software.  BEFORE using any encryption software, please 
+   check your country's laws, regulations and policies concerning the
+   import, possession, or use, and re-export of encryption software, to 
+   see if this is permitted.  See &lt;http://www.wassenaar.org/&gt; for
+   more
+   information.</p>
+<p>The Apache Software Foundation has classified this software as Export Commodity 
+   Control Number (ECCN) 5D002, which includes information security
+   software using or performing cryptographic functions with asymmetric
+   algorithms.  The form and manner of this Apache Software Foundation
+   distribution makes it eligible for export under the "publicly available"
+   Section 742.15(b) exemption (see the BIS 
+   Export Administration Regulations, Section 742.15(b)) for both object 
+   code and source code.</p>
+<p>The following provides more details on the included cryptographic
+   software:
+  ...
+   ` Be sure to add some information at the bottom of the notice about the
+   components of the release including cryptography.</p>
+<h1 id="faq">Frequently Asked Questions<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
+<h2 id="faq-productname">What is the "PRODUCT NAME/MODEL #" for my product?<a class="headerlink" href="#faq-productname" title="Permanent link">&para;</a></h2>
+<p>Simply the name of the ASF product (e.g. "Apache Foo"), even if the
+notification is being made about another manufacturer's cryptography
+included in the ASF product. The ASF product's version number should not be
+listed.</p>
+<h2 id="faq-manufacturer">What is the MANUFACTURER?<a class="headerlink" href="#faq-manufacturer" title="Permanent link">&para;</a></h2>
+<p>The manufacture is the name of the individual/organization that built the
+crypto item included in the ASF product, whether that is the ASF itself, or
+some other open source project or organization.</p>
+<h2 id="faq-notification">What is the NOTIFICATION?<a class="headerlink" href="#faq-notification" title="Permanent link">&para;</a></h2>
+<p>A URL that directly or indirectly points to the source code for the crypto
+item built by the listed <a href="#faq-manufacturer">manufacturer</a> that is
+distributed within the ASF <a href="#faq-productname">product</a>. At the ASF, we
+indirectly point to the source code by having all products list
+<a href="http://www.apache.org/licenses/exports/">www.apache.org/licenses/exports/</a> as the NOTIFICATION
+url, and ensuring that this page is refreshed with the set of links to the
+crypto source code for the notifying product. If the product contains more
+than one crypto item, the exports page simply points to the source for each
+crypto item included in the product.</p>
+<h2 id="faq-firstnotification">When is the first time a notification email must be sent?<a class="headerlink" href="#faq-firstnotification" title="Permanent link">&para;</a></h2>
+<p>Prior to exporting/posting online. NOTE: this even includes distribution of code through
+publicly accessible servers/repositories before there has been any official
+release.</p>
+<h2 id="faq-public">What are examples of when a crypto item is publicly accessible through ASF servers?<a class="headerlink" href="#faq-public" title="Permanent link">&para;</a></h2>
+<p>The obvious example is including something like an OpenSSL binary within a
+product distribution from a /dist URL. The <strong>less obvious example</strong> , is
+the point at which a subversion repository starts to include code that is
+specially designed to work with any other 5D002 item, whether that item is
+ever to be included within a product distribution or not. In other words, a
+project should send out a notification email just after making the decision
+to include code that is specially designed to work with crypto APIs but
+before actually committing such code. No need to worry about surprise JIRA
+attachments with such code -- only the event of committing the code to the
+ASF product repository.</p>
+<h2 id="faq-publicemails">Are public contributions of crypto items to the mailing list, JIRA or Bugzilla databases considered exports?<a class="headerlink" href="#faq-publicemails" title="Permanent link">&para;</a></h2>
+<p>No. We do not need to worry about surprise JIRA attachments with such code
+-- only code committed to the ASF product repository. The actual poster of
+these attachments would be the one 'exporting' the crypto, since it would
+not be an act of the ASF project, as it addressed <a href="#faq-public">above</a>.</p>
+<h2 id="faq-previouslyexported">If we distribute previously exported crypto items, must we still qualify the same item for export?<a class="headerlink" href="#faq-previouslyexported" title="Permanent link">&para;</a></h2>
+<p>Yes. The ASF is responsible for complying with the EAR, regardless of
+whether the item we are exporting has been previously exported under the
+Section 742.15(b) publicly available exemption or any license exception by another manufacturer/company/open source project.</p>
+<h2 id="faq-manyproducts">If the ASF distributes a particular crypto item within one product under the Section 742.15(b) publicly available exemption, must the same item requalify for the Section 742.15(b) publicly available exemption when distributed in a different ASF product?<a class="headerlink" href="#faq-manyproducts" title="Permanent link">&para;</a></h2>
+<p>Yes. Each product must qualify separately, which includes sending
+notifications for each.</p>
+<h2 id="faq-versions">If the ASF distributes/exports a crypto item after qualifying it under the Section 742.15(b) publicly available exemption, must the same product requalify for release of future versions?<a class="headerlink" href="#faq-versions" title="Permanent link">&para;</a></h2>
+<p>No. As long as the email's notification URL for the source location still
+(directly or indirectly) points to the applicable source for each version's
+crypto item, no additional process is required.</p>
+<h2 id="faq-notificationurl">Where must the email's notification URL point to?<a class="headerlink" href="#faq-notificationurl" title="Permanent link">&para;</a></h2>
+<p>The notification URL for all products should point to
+<a href="http://www.apache.org/licenses/exports/">http://www.apache.org/licenses/exports/</a>
+, which should be refreshed to include the project's cryptography data
+before the email is sent.</p>
+<h2 id="faq-additionalemails">If the notification URL never changes, when are additional notification emails required?<a class="headerlink" href="#faq-additionalemails" title="Permanent link">&para;</a></h2>
+<p>Each product needs to send only one notification email until information
+previously submitted is no longer accurate, e.g. a change in the
+manufacturer.</p>
+<h2 id="faq-infousers">Is there any BIS requirement to tell users and/or redistributors of our products about the crypto within our products?<a class="headerlink" href="#faq-infousers" title="Permanent link">&para;</a></h2>
+<p>No, but it's a good idea to do so. See our self-imposed requirement to
+<a href="#inform">inform users</a>.</p>
+<h2 id="faq-twocryptos">When exporting a product that is not only designed to use some third-party crypto item, but also includes the third-party crypto item, does this require two notifications or one notification with two manufacturers?<a class="headerlink" href="#faq-twocryptos" title="Permanent link">&para;</a></h2>
+<p>When multiple crypto items exist within a single product, one email should
+be sent listing all manufacturers of encryption items in the product and
+the <a href="http://www.apache.org/licenses/exports/">standard notification URL</a> to the ASF-wide exports
+page with detailed information, including the location of the corresponding
+source code.</p>
+<h2 id="faq-nonasfsource">Can the ultimate link to the crypto item's source code point to a non-ASF web page?<a class="headerlink" href="#faq-nonasfsource" title="Permanent link">&para;</a></h2>
+<p>Yes, as long as the PMC is reasonably confident that the non-ASF location
+is likely to remain available for BIS inspection for the foreseeable
+future. If this is not the case at some point, the ASF should update the
+link to a location that will remain available.</p>
+<h2 id="faq-compilerswitch">What if the object/binary code being distributed was built with a particular compiler switch?<a class="headerlink" href="#faq-compilerswitch" title="Permanent link">&para;</a></h2>
+<p>It is fine to use whatever compiler switches we like. There is no need to
+provide compiler switch info, as long as the pointed source code is a
+superset of all the controlled source that ends up being distributed within
+the object/binary file.</p>
+<h2 id="faq-binaryurl">Do we ever need to notify the BIS of the location of object/binary files?<a class="headerlink" href="#faq-binaryurl" title="Permanent link">&para;</a></h2>
+<p>No, but whether we are distributing source or object/binary files, we must
+always make sure a notification has been made pointing (directly or
+indirectly) to the associated source.</p>
+<h2 id="faq-includedlibssl">If my project ships a binary that includes libssl/libcrypto, what notifications must be made?<a class="headerlink" href="#faq-includedlibssl" title="Permanent link">&para;</a></h2>
+<p>Within the single notification email ( <strong>sent prior to either hosting
+libssl/libcrypto or committing code that binds to it</strong> ), the ASF and the
+OpenSSL project should be listed as manufacturers, since both organizations
+produce encryption items included in the product. See the more generic
+<a href="#faq-twocryptos">Q&amp;A on this topic.</a> </p>
+<h2 id="faq-linkedtolibssl">If my project ships a binary that provides bindings to OpenSSL, but does not include its source or binaries, what notifications must be made?<a class="headerlink" href="#faq-linkedtolibssl" title="Permanent link">&para;</a></h2>
+<p>The only required notification for an Apache project that is specially
+designed to use, but doesn't include, such crypto, is just the notification
+for the ASF product code.</p>
+<h2 id="faq-nonamerican">Isn't it somewhat weird that I, who am not a U.S. citizen nor resident, should be constrained as to what or how I can commit to an ASF repository by some U.S. law?<a class="headerlink" href="#faq-nonamerican" title="Permanent link">&para;</a></h2>
+<p>No. The ASF is a U.S.-based corporation and must comply with U.S. export
+controls. Incidentally, the U.S. is not the only country with controls on
+cryptography. Many <a href="http://www.wassenaar.org/participants/">other nations</a>
+have very similar restrictions, primarily driven by the <a href="http://www.wassenaar.org/">Wassenaar
+Arrangement</a>.</p>
+<h2 id="faq-digest">Do digest algorithms such as MD5 and SHA1 require notification?<a class="headerlink" href="#faq-digest" title="Permanent link">&para;</a></h2>
+<p>No. One-way algorithms such as MD5 or SHA1, or more sophisticated
+implementations, do not require notification - only encryption algorithms.</p></div>
+
+  <!-- Footer -->
+  
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <br />
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-2">
+          <h5 class="white">Community</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://community.apache.org/">Overview</a></li>
+            <li><a href="http://www.apache.org/foundation/conferences.html">Conferences</a></li>
+            <li><a href="http://community.apache.org/gsoc.html">Summer of Code</a></li>
+            <li><a href="http://community.apache.org/newcomers/">Getting Started</a></li>
+            <li><a href="http://www.apache.org/foundation/how-it-works.html">The Apache Way</a></li>
+            <li><a href="http://www.apache.org/travel/">Travel Assistance</a></li>
+            <li><a href="http://www.apache.org/foundation/getinvolved.html">Get Involved</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/conduct.html">Code of Conduct</a></li>
+            <li><a href="http://community.apache.org/newbiefaq.html">Community FAQ</a></li>
+            <li><a href="http://www.apache.org/memorials/">Memorials</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Innovation</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://incubator.apache.org/">Incubator</a></li>
+            <li><a href="http://labs.apache.org/">Labs</a></li>
+            <li><a href="http://www.apache.org/licenses/">Licensing</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Tech Operations</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/dev/">Developer Information</a></li>
+            <li><a href="http://www.apache.org/dev/infrastructure.html">Infrastructure</a></li>
+            <li><a href="http://www.apache.org/security/">Security</a></li>
+            <li><a href="http://status.apache.org/">Status</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Press</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/press/">Overview</a></li>
+            <li><a href="https://blogs.apache.org/">ASF News</a></li>
+            <li><a href="https://blogs.apache.org/foundation/">Announcements</a></li>
+            <li><a href="https://twitter.com/TheASF">Twitter Feed</a></li>
+            <li><a href="http://www.apache.org/press/#contact">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h5 class="white">Legal</h5>
+          <ul class="list-unstyled white" role="menu">
+            <li><a href="http://www.apache.org/legal/">Legal Affairs</a></li>
+            <li><a href="http://www.apache.org/legal/dmca.html">DMCA</a></li>
+            <li><a href="http://www.apache.org/licenses/">Licensing</a></li>
+            <li><a href="http://www.apache.org/foundation/marks/">Trademark Policy</a></li>
+            <li><a href="http://www.apache.org/foundation/records/">Public Records</a></li>
+            <li><a href="http://www.apache.org/foundation/policies/privacy.html">Privacy Policy</a></li>
+            <li><a href="http://www.apache.org/licenses/exports/">Export Information</a></li>
+            <li><a href="http://www.apache.org/foundation/license-faq.html">Licensing FAQ</a></li>
+            <li><a href="http://www.apache.org/foundation/contact.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+
+      </div>
+      <hr class="col-lg-12 hr-white" />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Copyright &#169; 2019 The Apache Software Foundation, Licensed under the <a class="white" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+          <p class="text-center">Apache and the Apache feather logo are trademarks of The Apache Software Foundation. </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- / Footer -->
+
+  <script src="http://www.apache.org/js/jquery-2.1.1.min.js"></script>
+  <script src="http://www.apache.org/js/bootstrap.js"></script>
+  <script>
+    (function($){
+    $(document).ready(function(){
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).parent().siblings().removeClass('open');
+    $(this).parent().toggleClass('open');
+    console.log('WOrked');
+    });
+    });
+    })(jQuery);
+  </script>
+</body>
+
+<!-- Mirrored from www.apache.org/dev/crypto.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jun 2019 09:33:31 GMT -->
+</html>
